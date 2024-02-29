@@ -158,17 +158,17 @@ print("Objective function value:", evaluate(best_solution))
 import random
 
 class Airplane:
-    '''def __init__(self):
+    def __init__(self):
         self.arriving_fuel_level = random.uniform(1000, 5000)
         self.fuel_consumption_rate = random.uniform(5, 20)
         self.expected_landing_time = random.uniform(10, 120)
-        self.actual_landing_time = None  # Initialize actual landing time as None'''
-    def __init__(self, fuel_level, fuel_consumption_rate, expected_landing_time):
+        self.actual_landing_time = None  # Initialize actual landing time as None
+    '''def __init__(self, fuel_level, fuel_consumption_rate, expected_landing_time):
         self.arriving_fuel_level = fuel_level
         self.fuel_consumption_rate = fuel_consumption_rate
         self.expected_landing_time = expected_landing_time
         self.actual_landing_time = None 
-
+'''
     def __str__(self):
         return f"Fuel level: {self.arriving_fuel_level}, Fuel consumption rate: {self.fuel_consumption_rate}, Expected landing time: {self.expected_landing_time}, Actual landing time: {self.actual_landing_time}"
 
@@ -215,16 +215,16 @@ class LandingStrip:
 landing_strips = [LandingStrip() for _ in range(3)]
 
 # Generate airplanes
-#airplanes = generate_airplanes(5)
-
+airplanes = generate_airplanes(5)
+'''
 airplane1 = Airplane(4500, 15, 30)
 airplane2 = Airplane(3000, 10, 30)
 airplane3 = Airplane(3500, 18, 30)
 airplane4 = Airplane(4000, 12, 31)
 airplane5 = Airplane(5000, 20, 90)
-
+'''
 # Store airplanes in a list
-airplanes = [airplane1, airplane2, airplane3, airplane4, airplane5]
+# airplanes = [airplane1, airplane2, airplane3, airplane4, airplane5]
 
 # Set to track landed airplanes
 landed_airplanes = set()
@@ -249,3 +249,6 @@ for i, landing_strip in enumerate(landing_strips):
     print()
 
 
+# Calculate the sum of differences between actual and expected landing times
+sum_difference = sum(airplane.actual_landing_time - airplane.expected_landing_time for airplane in airplanes)
+print("Sum of differences between actual and expected landing times:", sum_difference)
