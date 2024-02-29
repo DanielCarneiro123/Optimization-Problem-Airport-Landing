@@ -109,6 +109,7 @@ print("Objective function value:", evaluate(best_solution))
 
 '''
 
+import copy
 import random
 import itertools
 
@@ -164,6 +165,7 @@ class LandingStrip:
         landing_strips = [LandingStrip() for _ in range(3)]
         landed_airplanes = set()
 
+
         # Simulate landing airplanes on strips
         for airplane in airplanes:
             for landing_strip in landing_strips:
@@ -188,20 +190,31 @@ def print_airplanes_and_strips(landing_strips, airplanes):
                 print(airplane)
             print()
 
+
+
 def generate_neighbors(airplanes):
-    # Generate all permutations of the airplanes' order
     neighbors = []
     for permutation in itertools.permutations(airplanes):
-        neighbors.append(list(permutation))
+        neighbor = [copy.deepcopy(plane) for plane in permutation]
+        for plane in neighbor:
+            plane.actual_landing_time = 0
+        neighbors.append(neighbor)
     return neighbors
 
 # Generate airplanes
-airplane1 = Airplane(4500, 15, 90)
-airplane2 = Airplane(3000, 10, 92)
-airplane3 = Airplane(3500, 18, 91)
-airplane4 = Airplane(4000, 12, 31)
-airplane5 = Airplane(5000, 20, 30)
+'''
+airplane1 = Airplane(4500, 15, 69)
+airplane2 = Airplane(3000, 10, 96)
+airplane3 = Airplane(3500, 18, 4)
+airplane4 = Airplane(4000, 12, 13)
+airplane5 = Airplane(5000, 20, 72)
+'''
 
+airplane1 = Airplane(4500, 15, 21)
+airplane2 = Airplane(3000, 10, 22)
+airplane3 = Airplane(3500, 18, 23)
+airplane4 = Airplane(4000, 12, 23)
+airplane5 = Airplane(5000, 20, 25)
 # Store airplanes in a list
 airplanes = [airplane1, airplane2, airplane3, airplane4, airplane5]
 
