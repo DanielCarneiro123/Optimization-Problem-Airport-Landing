@@ -193,36 +193,26 @@ class LandingStrip:
 def find_best_solution(neighbors):
     min_difference = float('inf')
     best_solution = None
+    unsafe_planes = 0
     
-    for neighbor_index, neighbor in enumerate(neighbors):
-        
-        landing_strips, sum_difference = LandingStrip.generateResults(neighbor)
-        unsafe_planes = sum(strip.count_unsafe_airplanes() for strip in landing_strips)
-        
-        print(f"Evaluating neighbor {neighbor_index + 1}:")
-        print("Landing strips configuration:")
-        for i, strip in enumerate(landing_strips):
-            print(f"Landing Strip {i}:")
-            for airplane in strip.current_airplanes:
-                print(airplane)
-            print()
-        
-        print("Sum of differences between actual and expected landing times:", sum_difference)
-        print("Number of unsafe planes:", unsafe_planes)
-        
-        # Check if the solution is consistent and update the best solution if applicable
-        if unsafe_planes == 0 or all(plane.actual_landing_time == plane.expected_landing_time for strip in landing_strips for plane in strip.current_airplanes if not plane.safe):
-            if sum_difference < min_difference:
+    while True:
+        for neighbor_index, neighbor in enumerate(neighbors):
+            
+            landing_strips, sum_difference = LandingStrip.generateResults(neighbor)        
+            
+            
+            # Check if the solution is consistent and update the best solution if applicable
+            if sum_difference < min_difference and sum(plane.actual_landing_time != plane.expected_landing_time for strip in landing_strips for plane in strip.current_airplanes if not plane.safe) <= unsafe_planes:
                 min_difference = sum_difference
                 best_solution = (landing_strips, sum_difference)
-    
-    if best_solution:
-        print("Best solution after evaluating all neighbors:")
-        print_airplanes_and_strips(*best_solution)
-        return best_solution
-    else:
-        print("No consistent solution found.")
-        return None
+        
+        if best_solution:
+            print("Best solution after evaluating all neighbors:")
+            print_airplanes_and_strips(*best_solution)
+            return best_solution
+        else:
+            print("No consistent solution found with", unsafe_planes, "unsafe planes not landing instantly")
+            unsafe_planes += 1
 
 
 
@@ -253,12 +243,12 @@ def generate_neighbors(airplanes):
 
 # Generate airplanes
 
-airplane1 = Airplane(4500, 15, 89)
-airplane2 = Airplane(3000, 10, 24)
+airplane1 = Airplane(1100, 20, 89)
+airplane2 = Airplane(1100, 20, 89)
 airplane3 = Airplane(1100, 20, 90)
 
-airplane4 = Airplane(1500, 20, 89)
-airplane5 = Airplane(1500, 20, 89)
+airplane4 = Airplane(1100, 20, 89)
+airplane5 = Airplane(1100, 20, 89)
 
 # Store airplanes in a list
 airplanes = [airplane1, airplane2, airplane3,airplane4,airplane5]
