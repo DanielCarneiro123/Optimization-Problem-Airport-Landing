@@ -1,113 +1,5 @@
 
-'''
 
-
-
-def get_neighbors(solution):
-    # Generate neighboring solutions by swapping the landing times of airplanes on the landing strips
-    neighbors = []
-    for i in range(len(solution)):
-        for j in range(i + 1, len(solution)):
-            neighbor = copy.deepcopy(solution)
-            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
-            neighbors.append(neighbor)
-    return neighbors
-def tabu_search(max_iterations, tabu_size, airplanes):
-    current_solution = airplanes[:]
-    best_solution = airplanes[:]
-    tabu_list = []
-
-    for _ in range(max_iterations):
-        neighbors = get_neighbors(current_solution)
-        best_neighbor = None
-        best_neighbor_value = (float('inf'), float('-inf'), float('-inf'))  # Initialize with large values
-
-        for neighbor in neighbors:
-            if neighbor not in tabu_list:
-                neighbor_value = evaluate_solution(neighbor)
-                if (neighbor_value[2], neighbor_value[0]) < (best_neighbor_value[2], best_neighbor_value[0]):  # Compare based on expected landing time first, then risk of crashes
-                    best_neighbor = neighbor
-                    best_neighbor_value = neighbor_value
-
-        if best_neighbor is None:
-            break
-
-        current_solution = best_neighbor
-        if (evaluate_solution(current_solution)[2], evaluate_solution(current_solution)[0]) < (evaluate_solution(best_solution)[2], evaluate_solution(best_solution)[0]):  # Compare based on expected landing time first, then risk of crashes
-            best_solution = current_solution
-
-        tabu_list.append(best_neighbor)
-        if len(tabu_list) > tabu_size:
-            tabu_list.pop(0)
-
-    return best_solution
-
-
-
-# Example usage
-num_airplanes = 4
-airplanes = generate_airplanes(num_airplanes)
-best_solution = tabu_search(max_iterations=10, tabu_size=10, airplanes=airplanes)
-print("Best solution found:")
-for airplane in best_solution:
-    print(airplane)
-print("Evaluation:", evaluate_solution(best_solution))
-
-
-import random
-
-
-def objective_function(x):
-    return x**2 + 3*x - 4
-
-
-def initial_solution():
-    return random.uniform(-10, 10)
-
-
-def get_neighbors(solution):
-    return [solution + random.uniform(-0.5, 0.5)]
-
-# Evaluate the quality of a solution (lower value is better)
-def evaluate(solution):
-    return objective_function(solution)
-
-def tabu_search(max_iterations, tabu_size):
-    current_solution = initial_solution()
-    best_solution = current_solution
-    tabu_list = []
-
-    for _ in range(max_iterations):
-        neighbors = get_neighbors(current_solution)
-        best_neighbor = None
-        best_neighbor_value = float('inf')
-
-        for neighbor in neighbors:
-            if neighbor not in tabu_list:
-                neighbor_value = evaluate(neighbor), i think in my case this evaluate func is the generateResults func
-                if neighbor_value < best_neighbor_value:
-                    best_neighbor = neighbor
-                    best_neighbor_value = neighbor_value
-
-        if best_neighbor is None:
-            break
-
-        current_solution = best_neighbor
-        if evaluate(current_solution) < evaluate(best_solution):
-            best_solution = current_solution
-
-        tabu_list.append(best_neighbor)
-        if len(tabu_list) > tabu_size:
-            tabu_list.pop(0)
-
-    return best_solution
-
-# Example usage
-best_solution = tabu_search(max_iterations=100, tabu_size=10)
-print("Best solution found:", best_solution)
-print("Objective function value:", evaluate(best_solution))
-
-'''
 import copy
 import random
 import itertools
@@ -200,20 +92,21 @@ def generate_neighbors(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
     
-    # Generate a fixed number of neighbors by randomly swapping positions of two airplanes
-    for _ in range(1000):
-        neighbor = airplanes[:]
-        i, j = random.sample(range(num_airplanes), 2)
-        neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
-        neighbors.append(neighbor)
+    # Generate neighbors by swapping the landing order of pairs of airplanes
+    for i in range(num_airplanes):
+        for j in range(i + 1, num_airplanes):
+            neighbor = airplanes[:]
+            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+            neighbors.append(neighbor)
     
     return neighbors
 
+
 def generate_initial_solution(airplanes):
-    # Sort airplanes based on expected landing time
-    # initial_solution = sorted(airplanes, key=lambda x: x.expected_landing_time)
-    initial_solution = airplanes
-    return initial_solution
+    # Sort airplanes based on a combination of expected landing time and fuel level
+   #better if no unsafelandings initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time, -x.arriving_fuel_level))
+    return airplanes
+
 
 def tabu_search(max_iterations, tabu_size, airplanes):
     current_solution = generate_initial_solution(airplanes)
@@ -225,11 +118,13 @@ def tabu_search(max_iterations, tabu_size, airplanes):
     for _ in range(max_iterations):
         neighbors = generate_neighbors(current_solution)  # You can optimize this step
         
+        
         # Find the best non-tabu neighbor
         best_neighbor = None
         best_neighbor_value = float('inf')
         
         for neighbor in neighbors:
+                
             if neighbor not in tabu_list:
                 landing_strips, neighbor_value, unsafe_waiting = LandingStrip.generateResults(neighbor)
                
@@ -265,15 +160,10 @@ def tabu_search(max_iterations, tabu_size, airplanes):
 
 
 def main():
-   # Generate 40 different airplanes
-    
-  
- 
- 
-        # Generate airplanes
-    airplane1 = Airplane(1100, 20, 90)
-    airplane2 = Airplane(1500, 20, 89)
-    airplane3 = Airplane(1100, 20, 90)
+     
+    airplane1 = Airplane(1300, 20, 1)
+    airplane2 = Airplane(1500, 20, 2)
+    airplane3 = Airplane(1300, 20, 3)
     airplane4 = Airplane(1600, 20, 89)
     airplane5 = Airplane(1100, 20, 49)
     airplane6 = Airplane(1600, 20, 39)
@@ -281,46 +171,46 @@ def main():
     airplane8 = Airplane(1600, 20, 19)
     airplane9 = Airplane(1600, 20, 9)
     airplane10 = Airplane(1600, 20, 9)
-    airplane11 = Airplane(1100, 20, 90)
+    airplane11 = Airplane(1300, 20, 90)
     airplane12 = Airplane(1500, 20, 89)
-    airplane13 = Airplane(1100, 20, 490)
-    airplane14 = Airplane(1600, 20, 89)
-    airplane15 = Airplane(1100, 20, 149)
+    airplane13 = Airplane(1300, 20, 490)
+    airplane14 = Airplane(1300, 20, 89)
+    airplane15 = Airplane(1300, 20, 149)
     airplane16 = Airplane(1600, 20, 39)
     airplane17 = Airplane(1600, 20, 29)
     airplane18 = Airplane(1600, 20, 19)
     airplane19 = Airplane(1600, 20, 9)
     airplane20 = Airplane(1600, 20, 9)
-    airplane21 = Airplane(1100, 20, 90)
+    airplane21 = Airplane(1300, 20, 90)
     airplane22 = Airplane(1500, 20, 89)
-    airplane23 = Airplane(1100, 20, 90)
+    airplane23 = Airplane(1300, 20, 90)
     airplane24 = Airplane(1600, 20, 589)
-    airplane25 = Airplane(1100, 20, 49)
+    airplane25 = Airplane(1300, 20, 49)
     airplane26 = Airplane(1600, 20, 39)
     airplane27 = Airplane(1600, 20, 29)
     airplane28 = Airplane(1600, 20, 19)
     airplane29 = Airplane(1600, 20, 9)
     airplane30 = Airplane(1600, 20, 559)
-    airplane31 = Airplane(1100, 20, 90)
+    airplane31 = Airplane(1300, 20, 90)
     airplane32 = Airplane(1500, 20, 89)
-    airplane33 = Airplane(1100, 20, 590)
+    airplane33 = Airplane(1300, 20, 590)
     airplane34 = Airplane(1600, 20, 89)
-    airplane35 = Airplane(1100, 20, 49)
+    airplane35 = Airplane(1300, 20, 49)
     airplane36 = Airplane(1600, 20, 39)
     airplane37 = Airplane(1600, 20, 529)
     airplane38 = Airplane(1600, 20, 19)
     airplane39 = Airplane(1600, 20, 9)
     airplane40 = Airplane(1600, 20, 9)
-    airplane41 = Airplane(1100, 20, 490)
+    airplane41 = Airplane(1300, 20, 490)
     airplane42 = Airplane(1500, 20, 89)
-    airplane43 = Airplane(1100, 20, 90)
+    airplane43 = Airplane(1300, 20, 90)
     airplane44 = Airplane(1600, 20, 489)
-    airplane45 = Airplane(1100, 20, 49)
+    airplane45 = Airplane(1300, 20, 49)
     airplane46 = Airplane(1600, 20, 39)
     airplane47 = Airplane(1600, 20, 29)
     airplane48 = Airplane(1600, 20, 19)
     airplane49 = Airplane(1600, 20, 449)
-    airplane50 = Airplane(1600, 20, 9)
+    airplane50 = Airplane(1100, 20, 9)
 
     # Store airplanes in a list
     airplanes = [airplane1, airplane2, airplane3, airplane4, airplane5, airplane6, airplane7, airplane8, airplane9, airplane10,
@@ -328,11 +218,17 @@ def main():
                 airplane21, airplane22, airplane23, airplane24, airplane25, airplane26, airplane27, airplane28, airplane29, airplane30,
                 airplane31, airplane32, airplane33, airplane34, airplane35, airplane36, airplane37, airplane38, airplane39, airplane40,
                 airplane41, airplane42, airplane43, airplane44, airplane45, airplane46, airplane47, airplane48, airplane49, airplane50]
+    
+    
+   
+    
+
+    
 
 
 
     # Perform tabu search
-    best_solution = tabu_search(max_iterations=500, tabu_size=10, airplanes=airplanes)
+    best_solution = tabu_search(max_iterations=300, tabu_size=10, airplanes=airplanes)
 
     # Print the best solution
     print("BEST SOLUTION:")
