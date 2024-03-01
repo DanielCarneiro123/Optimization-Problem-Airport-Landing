@@ -84,7 +84,7 @@ def tabu_search(max_iterations, tabu_size):
 
         for neighbor in neighbors:
             if neighbor not in tabu_list:
-                neighbor_value = evaluate(neighbor)
+                neighbor_value = evaluate(neighbor), i think in my case this evaluate func is the generateResults func
                 if neighbor_value < best_neighbor_value:
                     best_neighbor = neighbor
                     best_neighbor_value = neighbor_value
@@ -108,7 +108,6 @@ print("Best solution found:", best_solution)
 print("Objective function value:", evaluate(best_solution))
 
 '''
-
 import copy
 import random
 import itertools
@@ -190,39 +189,92 @@ class LandingStrip:
         
         return landing_strips, sum_difference
 
-def find_best_solution(neighbors):
-    min_difference = float('inf')
-    best_solution = None
-    unsafe_planes = 0
+
+def generate_neighbors(airplanes):
+    neighbors = []
+    num_airplanes = len(airplanes)
     
-    while True:
-        for neighbor_index, neighbor in enumerate(neighbors):
-            
-            landing_strips, sum_difference = LandingStrip.generateResults(neighbor)        
-            
-            
-            # Check if the solution is consistent and update the best solution if applicable
-            if sum_difference < min_difference and sum(plane.actual_landing_time != plane.expected_landing_time for strip in landing_strips for plane in strip.current_airplanes if not plane.safe) <= unsafe_planes:
-                min_difference = sum_difference
-                best_solution = (landing_strips, sum_difference)
+    # Iterate through all possible pairs of airplanes
+    for i in range(num_airplanes):
+        for j in range(i + 1, num_airplanes):
+            # Create a new neighbor by swapping the positions of two airplanes
+            neighbor = airplanes[:]
+            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+            neighbors.append(neighbor)
+    
+    return neighbors
+
+
+def generate_initial_solution(airplanes):
+    
+    initial_solution = airplanes
+    return initial_solution
+
+def tabu_search(max_iterations, tabu_size, airplanes):
+    current_solution = generate_initial_solution(airplanes)
+    best_solution = current_solution
+    best_solution_value = float('inf')  # Initialize best_solution_value
+    tabu_list = []
+    unsafe_planes=0
+
+    for _ in range(max_iterations):
+        neighbors = generate_neighbors(current_solution)  # You can optimize this step
         
-        if best_solution:
-            print("Best solution after evaluating all neighbors:")
-            print_airplanes_and_strips(*best_solution)
-            return best_solution
-        else:
-            print("No consistent solution found with", unsafe_planes, "unsafe planes not landing instantly")
-            unsafe_planes += 1
+        # Find the best non-tabu neighbor
+        best_neighbor = None
+        best_neighbor_value = float('inf')
+
+        for neighbor in neighbors:
+            if neighbor not in tabu_list:
+                landing_strips, neighbor_value = LandingStrip.generateResults(neighbor)
+                if neighbor_value < best_neighbor_value:
+                    best_neighbor = neighbor
+                    best_neighbor_value = neighbor_value
+
+        # If no non-tabu neighbors found, break
+        if best_neighbor is None:
+            break
+
+        # Update current solution
+        current_solution = best_neighbor
+        _, current_solution_value = LandingStrip.generateResults(current_solution)
+        
+        # Update best solution if necessary
+        if current_solution_value < best_solution_value:
+            best_solution = current_solution
+            best_solution_value = current_solution_value
+
+        # Update tabu list
+        tabu_list.append(best_neighbor)
+        if len(tabu_list) > tabu_size:
+            tabu_list.pop(0)
+
+    return best_solution
 
 
 
 
+def main():
+   # Generate 40 different airplanes
+    airplanes = []
+    for i in range(1, 41):
+        fuel_level = random.randint(1000, 2000)  # Random fuel level between 1000 and 2000
+        fuel_consumption_rate = random.randint(15, 25)  # Random fuel consumption rate between 15 and 25
+        expected_landing_time = random.randint(0, 90)  # Random expected landing time between 0 and 90
+        airplane = Airplane(fuel_level, fuel_consumption_rate, expected_landing_time)
+        airplanes.append(airplane)
 
 
+    # Perform tabu search
+    best_solution = tabu_search(max_iterations=1000, tabu_size=10, airplanes=airplanes)
+
+    # Print the best solution
+    print("BEST SOLUTION:")
+    print_airplanes_and_strips(best_solution)
 
 
-
-def print_airplanes_and_strips(landing_strips, sum_difference):
+def print_airplanes_and_strips(best_solution):
+    landing_strips, sum_difference = LandingStrip.generateResults(best_solution)
     print("Sum of differences between actual and expected landing times:", sum_difference)
     for i, landing_strip in enumerate(landing_strips):
         print(f"Landing Strip {i}:")
@@ -230,38 +282,5 @@ def print_airplanes_and_strips(landing_strips, sum_difference):
             print(airplane)
         print()
 
-
-
-def generate_neighbors(airplanes):
-    neighbors = []
-    for permutation in itertools.permutations(airplanes):
-        neighbor = [copy.deepcopy(plane) for plane in permutation]
-        for plane in neighbor:
-            plane.actual_landing_time = 0
-        neighbors.append(neighbor)
-    return neighbors
-
-# Generate airplanes
-
-airplane1 = Airplane(1100, 20, 89)
-airplane2 = Airplane(1100, 20, 89)
-airplane3 = Airplane(1100, 20, 90)
-
-airplane4 = Airplane(1100, 20, 89)
-airplane5 = Airplane(1100, 20, 89)
-
-# Store airplanes in a list
-airplanes = [airplane1, airplane2, airplane3,airplane4,airplane5]
-
-# Generate neighbors
-neighbors = generate_neighbors(airplanes)
-
-
-
-best_solution = find_best_solution(neighbors)
-
-# Print the best solution
-print("BEST SOLUTION")
-print_airplanes_and_strips(*best_solution)
-
-
+if __name__ == "__main__":
+    main()
