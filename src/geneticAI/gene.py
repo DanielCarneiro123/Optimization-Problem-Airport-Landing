@@ -21,6 +21,11 @@ class Airplane:
     def mutate_airplane_arriving_time(self, other_airplane):
         self.expected_landing_time = other_airplane.expected_landing_time
 
+    def __eq__(self, other):
+        if not isinstance(other,Airplane):
+            return NotImplemented
+        return self.arriving_fuel_level == other.arriving_fuel_level and self.fuel_consumption_rate == other.fuel_consumption_rate and self.expected_landing_time == other.expected_landing_time
+
     def print_airplane(self):
         print("\n" + "=" * 30)
         print("    Airplane Details Menu")
@@ -30,4 +35,6 @@ class Airplane:
         print("2. Fuel Consumption Rate: {} gallons per minute".format(self.fuel_consumption_rate))
         print("3. Expected Landing Time: {} minutes".format(self.expected_landing_time))
         print("\n" + "=" * 30)
+
+
 
