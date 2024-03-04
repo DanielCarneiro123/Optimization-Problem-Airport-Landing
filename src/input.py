@@ -64,32 +64,49 @@ class LandingStrip:
     
 
     def land_airplane(self, airplane, landing_strips):
-        if airplane.expected_landing_time >= self.empty_time:
-            # Se o tempo de pouso esperado for após o tempo vazio atual, não há necessidade de esperar
+        # Verifica se a pista 1 está livre
+        if landing_strips[0].is_empty():
             actual_landing_time = airplane.expected_landing_time
             self.empty_time = actual_landing_time + 3
             airplane.actual_landing_time = actual_landing_time
             airplane.ensure_enough_fuel()
             self.add_airplane(airplane)
         else:
-            # Se o tempo de pouso esperado for antes do tempo vazio atual, ajuste-o de acordo
-            max_empty_time = max(landing_strip.get_empty_time() for landing_strip in landing_strips)
-            min_empty_time_strip = min(range(len(landing_strips)), key=lambda i: landing_strips[i].get_empty_time())
-            min_empty_time = landing_strips[min_empty_time_strip].get_empty_time()
-            actual_landing_time = max(max_empty_time - 3, max(airplane.expected_landing_time, min_empty_time))
-            landing_strips[min_empty_time_strip].set_empty_time(actual_landing_time + 3)
-            airplane.actual_landing_time = actual_landing_time
-            airplane.ensure_enough_fuel()
-            landing_strips[min_empty_time_strip].add_airplane(airplane)
+            # Verifica se a pista 2 está livre
+            if len(landing_strips) > 1 and landing_strips[1].is_empty():
+                landing_strip = landing_strips[1]
+                actual_landing_time = max(landing_strips[0].empty_time, airplane.expected_landing_time)
+                landing_strip.set_empty_time(actual_landing_time + 3)
+                airplane.actual_landing_time = actual_landing_time
+                airplane.ensure_enough_fuel()
+                landing_strip.add_airplane(airplane)
+            else:
+                # Verifica se a pista 3 está livre
+                if len(landing_strips) > 2 and landing_strips[2].is_empty():
+                    landing_strip = landing_strips[2]
+                    actual_landing_time = max(landing_strips[0].empty_time, airplane.expected_landing_time)
+                    landing_strip.set_empty_time(actual_landing_time + 3)
+                    airplane.actual_landing_time = actual_landing_time
+                    airplane.ensure_enough_fuel()
+                    landing_strip.add_airplane(airplane)
+                else:
+                    # Todas as pistas estão ocupadas, aterrisse no primeiro disponível
+                    for strip in landing_strips:
+                        if strip.is_empty():
+                            actual_landing_time = max(strip.empty_time, airplane.expected_landing_time)
+                            strip.set_empty_time(actual_landing_time + 3)
+                            airplane.actual_landing_time = actual_landing_time
+                            airplane.ensure_enough_fuel()
+                            strip.add_airplane(airplane)
+                            break
+
+
 
 
 def cost_function(solution):
     cost = 0
     for landing_strip in solution:
         for airplane in landing_strip:
-            print(airplane.get_actual_landing_time())
-            print(airplane.get_expected_landing_time())
-            print(airplane.get_priority())
             delay = airplane.get_actual_landing_time() - airplane.get_expected_landing_time()
             if delay > 0 and airplane.get_priority() == 1:
                 cost += delay
@@ -134,6 +151,7 @@ def generate_neighbors(airplanes):
 def simulated_annealing(airplanes, landing_strips, initial_temperature=1000, cooling_rate=0.00001, stopping_temperature=0.0001, max_iterations=1000):
     current_solution = generate_initial_solution(airplanes, landing_strips)
     for strip in current_solution:
+            strip.sort(key=lambda x: x.expected_landing_time)
             for airplane in strip:
                 landing_strip = random.choice(landing_strips)
                 landing_strip.land_airplane(airplane, landing_strips)
@@ -147,13 +165,13 @@ def simulated_annealing(airplanes, landing_strips, initial_temperature=1000, coo
     while temperature > stopping_temperature and iteration < max_iterations:
         new_solution = copy.deepcopy(current_solution)  
         for strip in new_solution:
+            strip.sort(key=lambda x: x.expected_landing_time)
             for airplane in strip:
                 landing_strip = random.choice(landing_strips)
                 landing_strip.land_airplane(airplane, landing_strips)
 
         generate_neighbors(new_solution)
         new_cost = cost_function(new_solution)
-        print(new_cost)
         delta_cost = new_cost - current_cost
         
         if delta_cost < 0 or math.exp(-delta_cost / temperature) > random.random():
@@ -161,7 +179,6 @@ def simulated_annealing(airplanes, landing_strips, initial_temperature=1000, coo
             current_cost = new_cost
             
             if new_cost < best_cost:
-                print("here")
                 best_solution = new_solution
                 best_cost = new_cost
                 
