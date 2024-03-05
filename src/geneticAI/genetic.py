@@ -4,9 +4,9 @@ import copy
 
 class Airplane:
     def __init__(self):
-        self.arriving_fuel_level = int(random.uniform(1000, 5000))  # Level of fuel for the plane
-        self.fuel_consumption_rate = int(random.uniform(5, 20))  # Fuel consumption rate
-        self.expected_landing_time = int(random.uniform(10, 120))  # Expected time to reach the destination
+        self.arriving_fuel_level = int(random.uniform(100000, 500000))  # Level of fuel for the plane
+        self.fuel_consumption_rate = int(random.uniform(1, 2))  # Fuel consumption rate
+        self.expected_landing_time = int(random.uniform(10, 10000))  # Expected time to reach the destination
 
     def __eq__(self, other):
         if not isinstance(other, Airplane):
@@ -88,9 +88,9 @@ def check_free_runway(airport, time_spent):
     free_runways = []
     if airport.runway[0] == 0 or time_spent - airport.runway[0] >= 3:
         free_runways.append(0)
-    elif airport.runway[1] == 0 or time_spent - airport.runway[1] >= 3:
+    if airport.runway[1] == 0 or time_spent - airport.runway[1] >= 3:
         free_runways.append(1)
-    elif airport.runway[2] == 0 or time_spent - airport.runway[2] >= 3:
+    if airport.runway[2] == 0 or time_spent - airport.runway[2] >= 3:
         free_runways.append(2)
     if len(free_runways) == 0:
         return -1
@@ -143,50 +143,49 @@ def calculate_fitness(chromosome, airport):
     time_spent = 0
     for gene in chromosome:
         if gene.expected_landing_time - time_spent > 0:
-            # If the plane can land, check if it has enough fuel and arrived on time
-            time_spent += gene.expected_landing_time - time_spent
-            runway_free = check_free_runway(airport, time_spent)
-            if runway_free != -1:
-                check_gas = enough_gas(gene, time_spent)
-                if check_gas:
-                    # Add 2 points if the plane has enough fuel
-                    fitness += 2
-                check_time = on_time(gene, time_spent)
-                if check_time:
-                    # Add 1 point if the plane arrived on time
-                    fitness += 1
-                if runway_free == 0:
-                    # Mutate the first runway
-                    airport.mutate_runway1(time_spent)
-                elif runway_free == 1:
-                    # Mutate the second runway
-                    airport.mutate_runway2(time_spent)
-                else:
-                    # Mutate the third runway
-                    airport.mutate_runway3(time_spent)
+            time_spent += gene.expected_landing_time - time_spent  # If the plane can land, check if it has enough fuel and arrived on time
+        runway_free = check_free_runway(airport, time_spent)
+        if runway_free != -1:
+            check_gas = enough_gas(gene, time_spent)
+            if check_gas:
+                # Add 2 points if the plane has enough fuel
+                fitness += 2
+            check_time = on_time(gene, time_spent)
+            if check_time:
+                # Add 1 point if the plane arrived on time
+                fitness += 1
+            if runway_free == 0:
+                # Mutate the first runway
+                airport.mutate_runway1(time_spent)
+            elif runway_free == 1:
+                # Mutate the second runway
+                airport.mutate_runway2(time_spent)
             else:
-                # If the plane cannot land, add 3 minutes to the time spent and check again
-                time_spent += 3
-                runway_free = check_free_runway(airport, time_spent)
-                check_gas = enough_gas(gene, time_spent)
-                if check_gas:
-                    # Add 2 points if the plane has enough fuel
-                    fitness += 2
-                check_time = on_time(gene, time_spent)
-                if check_time:
-                    # Add 1 point if the plane arrived on time
-                    fitness += 1
-                if runway_free == 0:
-                    # Mutate the first runway
-                    airport.mutate_runway1(time_spent)
-                elif runway_free == 1:
-                    # Mutate the second runway
-                    airport.mutate_runway2(time_spent)
-                elif runway_free == 2:
-                    # Mutate the third runway
-                    airport.mutate_runway3(time_spent)
-                else:
-                    raise ValueError("Double check on the runway is impossible to happen")
+                # Mutate the third runway
+                airport.mutate_runway3(time_spent)
+        else:
+            # If the plane cannot land, add 3 minutes to the time spent and check again
+            time_spent += 3
+            runway_free = check_free_runway(airport, time_spent)
+            check_gas = enough_gas(gene, time_spent)
+            if check_gas:
+                # Add 2 points if the plane has enough fuel
+                fitness += 2
+            check_time = on_time(gene, time_spent)
+            if check_time:
+                # Add 1 point if the plane arrived on time
+                fitness += 1
+            if runway_free == 0:
+                # Mutate the first runway
+                airport.mutate_runway1(time_spent)
+            elif runway_free == 1:
+                # Mutate the second runway
+                airport.mutate_runway2(time_spent)
+            elif runway_free == 2:
+                # Mutate the third runway
+                airport.mutate_runway3(time_spent)
+            else:
+                raise ValueError("Double check on the runway is impossible to happen")
     return fitness
 
 
@@ -219,21 +218,22 @@ def roulette_selection(chromosomes):
     """
     total_fitness = get_fitness(chromosomes)
     selected = []
+    not_selected = []
     selection_probabilities = [(chromosome, fitness / total_fitness) for chromosome, fitness in chromosomes]
+    cumulative_probabilities = [(selection_probabilities[i][0], sum([p[1] for p in selection_probabilities[:i + 1]]))
+                                for i in range(len(selection_probabilities))]
 
-    while len(selected) < len(chromosomes):
-        r = random.random()
-        cumulative_probability = 0
-
-        for chromosome, probability in selection_probabilities:
-            cumulative_probability += probability
-            if cumulative_probability > r:
-                selected.append(chromosome)
-                break
+    for chromosome, cumulative_prob in cumulative_probabilities:
+        if cumulative_prob <= random.uniform(0, 1):
+            selected.append(chromosome)
+        else:
+            not_selected.append(chromosome)
 
     if len(selected) % 2 != 0:
-        selected.pop()
-    return selected
+        popped_chromosome = selected.pop()
+        not_selected.append(popped_chromosome)
+
+    return selected, not_selected
 
 
 def rank_selection(chromosomes, selection_pressure):
@@ -286,16 +286,18 @@ def reproduction(chromosome1, chromosome2):
     List[Airplane]: The offspring chromosome.
     """
     n = len(chromosome1)
-    point = random.randint(0, n - 1)
-    new_chromosome = []
+    point1 = random.randint(0, n - 1)
+    point2 = random.randint(0, n - 1)
 
-    new_chromosome.extend(chromosome1[:point])
+    # Ensure point2 is greater than point1
+    if point2 < point1:
+        point1, point2 = point2, point1
 
-    for gene in chromosome2:
-        if gene not in new_chromosome:
-            new_chromosome.append(gene)
+    # Perform crossover
+    new_chromosome1 = chromosome1[:point1] + [gene for gene in chromosome2 if gene not in (chromosome1[:point1]+chromosome1[point2:])] + chromosome1[point2:]
+    new_chromosome2 = chromosome2[:point1] + [gene for gene in chromosome1 if gene not in (chromosome2[:point1]+chromosome2[point2:])] + chromosome2[point2:]
 
-    return new_chromosome
+    return new_chromosome1, new_chromosome2
 
 
 def reproduction_all(chromosomes):
@@ -358,6 +360,7 @@ def mutation(chromosome):
 
 def geneticAI(population_size, max_number_of_iterations, selection_method):
     airport = Airport()  # Generate an Airport object with 3 lanes for landing.
+
     population = generate_chromosomes(population_size)  # Generate a population with different orders for the same
     # planes.
 
@@ -367,7 +370,7 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
     i = 0
     best_chromosome = None
 
-    while i < max_number_of_iterations or current_fitness_of_best_chromosome < optimal_fitness:
+    while i < max_number_of_iterations and current_fitness_of_best_chromosome < optimal_fitness:
 
         population_fitness = []
 
@@ -375,11 +378,12 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
             fitness = calculate_fitness(chromosome, copy.copy(airport))
             if fitness > current_fitness_of_best_chromosome:
                 current_fitness_of_best_chromosome = fitness
+                best_chromosome = chromosome
             population_fitness.append((chromosome, fitness))
-
+            print(current_fitness_of_best_chromosome)
         # Selection of the best chromosomes according to a heuristic  #To check
         if selection_method == "roulette":
-            best_chromosomes = roulette_selection(population_fitness)
+            best_chromosomes, not_selected = roulette_selection(population_fitness)
         elif selection_method == "rank":
             pressure = random.uniform(1, 2)
             best_chromosomes = rank_selection(population_fitness, pressure)
@@ -388,6 +392,7 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
 
         new_generation = reproduction_all(best_chromosomes)  # Change mutation and reproduction
         mutate_generation = mutation_all(new_generation)  # Done
+        mutate_generation += not_selected
 
         for chromosome in mutate_generation:
             fitness = calculate_fitness(chromosome, copy.copy(airport))
@@ -397,8 +402,15 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
 
         population = mutate_generation
         i += 1
-    return best_chromosome
+    return best_chromosome, current_fitness_of_best_chromosome
+
 
 # Generation of population is working fine
 # Reproduction is
 # Mutation is Working fine
+
+best_chromosome, fitness = geneticAI(50, 10000, "roulette")
+
+print(fitness)
+
+
