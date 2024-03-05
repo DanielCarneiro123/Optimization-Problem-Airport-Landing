@@ -13,6 +13,7 @@ class Airplane:
         self.expected_landing_time = expected_landing_time
         self.actual_landing_time = None
         self.safe = self.ensure_enough_fuel()
+        
 
     def __str__(self):
         return f"Fuel level: {self.arriving_fuel_level}, Fuel consumption rate: {self.fuel_consumption_rate}, Expected landing time: {self.expected_landing_time}, Actual landing time: {self.actual_landing_time}, Safety: {self.safe}"
@@ -22,7 +23,8 @@ class Airplane:
     
     
     def is_gonna_crash(self):
-        actual_fuel_needed = self.fuel_consumption_rate * (self.actual_landing_time - self.expected_landing_time)
+        
+        actual_fuel_needed = self.fuel_consumption_rate * self.actual_landing_time
         
         return self.arriving_fuel_level < actual_fuel_needed
     
@@ -90,12 +92,15 @@ class LandingStrip:
         sum_difference = 0
         unsafe_waiting = 0
         num_of_crashes= 0
+        
         # Calculate the sum of differences between actual and expected landing times for the current solution
         for airplane in airplanes:
+            
             sum_difference += airplane.actual_landing_time - airplane.expected_landing_time
             if(airplane.actual_landing_time - airplane.expected_landing_time!=0 and not airplane.safe):
                 unsafe_waiting += 1
             if(airplane.is_gonna_crash()):
+                 
                  num_of_crashes += 1
                 
        
@@ -128,7 +133,9 @@ def tabu_search(max_iterations, tabu_size, airplanes):
     best_solution_value = float('inf')  # Initialize best_solution_value
     tabu_list = []
     unsafe_planes = 100000  # Initialize to a large value
+    unsafe_planes_sol = 100000  # Initialize to a large value
     num_of_crashes = 100000
+    num_of_crashes_sol = 100000
 
     for _ in range(max_iterations):
         neighbors = generate_neighbors(current_solution)  # You can optimize this step
@@ -146,7 +153,7 @@ def tabu_search(max_iterations, tabu_size, airplanes):
             if neighbor not in tabu_list:
                 landing_strips, neighbor_value, unsafe_waiting, curr_num_of_crashes = LandingStrip.generateResults(neighbor)
                
-                if (((neighbor_value < best_neighbor_value) and (unsafe_waiting <= unsafe_planes) and (curr_num_of_crashes<=num_of_crashes)) or (unsafe_waiting<unsafe_planes) or (curr_num_of_crashes < num_of_crashes)):
+                if (((neighbor_value < best_neighbor_value) and (unsafe_waiting <= unsafe_planes) and (curr_num_of_crashes<=num_of_crashes)) or ((unsafe_waiting<unsafe_planes) and (curr_num_of_crashes <= num_of_crashes) ) or (curr_num_of_crashes < num_of_crashes)):
                     
                     best_neighbor = neighbor
                     best_neighbor_value = neighbor_value
@@ -162,16 +169,16 @@ def tabu_search(max_iterations, tabu_size, airplanes):
         # Update current solution
         current_solution = best_neighbor
 
-        ''' print("best neighbour:")
-        for a in current_solution:
-            print(a)
-          '''
+      
+          
         
         # Update best solution if necessary
-        if best_neighbor_value < best_solution_value:
-            '''print("updated")'''
+        if ((best_neighbor_value < best_solution_value) and (unsafe_planes<= unsafe_planes_sol) and (num_of_crashes<=num_of_crashes_sol)) or ((unsafe_planes<unsafe_planes_sol) and (num_of_crashes <= num_of_crashes_sol)) or (num_of_crashes < num_of_crashes_sol):
+            
             best_solution = current_solution
             best_solution_value = best_neighbor_value
+            unsafe_planes_sol = unsafe_planes
+            num_of_crashes_sol = num_of_crashes
 
         # Update tabu list
         tabu_list.append(best_neighbor)
@@ -181,16 +188,14 @@ def tabu_search(max_iterations, tabu_size, airplanes):
     return best_solution
 
 
-def sort_airplanes_by_expected_landing_time(airplanes):
-    return sorted(airplanes, key=lambda x: x.expected_landing_time)
 
 
 def main():
      
-    airplane1 = Airplane(1199, 20, 59)
-    airplane2 = Airplane(1199, 20, 59)
-    airplane3 = Airplane(1199, 20, 59)
-    airplane4 = Airplane(19, 20, 61)
+    airplane1 = Airplane(1299, 20, 59)
+    airplane2 = Airplane(1299, 20, 59)
+    airplane3 = Airplane(1299, 20, 59)
+    airplane4 = Airplane(1221, 20, 61)
     airplane5 = Airplane(19, 20, 49)
     airplane6 = Airplane(1600, 20, 39)
     airplane7 = Airplane(1600, 20, 29)
@@ -250,7 +255,7 @@ def main():
    
     
     # Perform tabu search
-    best_solution = tabu_search(max_iterations=300, tabu_size=10, airplanes=airplanes)
+    best_solution = tabu_search(max_iterations=1, tabu_size=10, airplanes=airplanes)
 
     # Print the best solution
     print("BEST SOLUTION:")
@@ -266,8 +271,9 @@ def print_airplanes_and_strips(best_solution):
         print(f"Landing Strip {i}:")
         for airplane in landing_strip.current_airplanes:
             print(airplane)
-            if airplane.is_gonna_crash():
+            if (airplane.is_gonna_crash()):
                 print("CRAAAAAAAAAAAAAAAASH")
+    print("Crashes:", n)
     print("Unsafe waiting:", unsafe_waiting)
 
 if __name__ == "__main__":
