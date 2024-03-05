@@ -6,7 +6,7 @@ class Airplane:
     def __init__(self):
         self.arriving_fuel_level = int(random.uniform(100000, 500000))  # Level of fuel for the plane
         self.fuel_consumption_rate = int(random.uniform(1, 2))  # Fuel consumption rate
-        self.expected_landing_time = int(random.uniform(10, 10000))  # Expected time to reach the destination
+        self.expected_landing_time = int(random.uniform(1, 10000))  # Expected time to reach the destination
 
     def __eq__(self, other):
         if not isinstance(other, Airplane):
@@ -86,15 +86,24 @@ def check_free_runway(airport, time_spent):
     int: The index of the free runway (random choice), or -1 if no runway is free.
     """
     free_runways = []
+
+    # Check each runway for availability
     if airport.runway[0] == 0 or time_spent - airport.runway[0] >= 3:
-        free_runways.append(0)
+        free_runways.append((0, airport.runway[0]))
     if airport.runway[1] == 0 or time_spent - airport.runway[1] >= 3:
-        free_runways.append(1)
+        free_runways.append((1, airport.runway[1]))
     if airport.runway[2] == 0 or time_spent - airport.runway[2] >= 3:
-        free_runways.append(2)
+        free_runways.append((2, airport.runway[2]))
+
+    # Find the runway with the minimum value
+
     if len(free_runways) == 0:
-        return -1
-    return random.choice(free_runways)
+        min_waiting_time = 3 - time_spent + min(airport.runway)
+        return -1, min_waiting_time
+
+    min_runway = min(free_runways, key=lambda x: x[1])
+    # Return the index of the runway with the minimum value
+    return min_runway[0], min_runway[1]
 
 
 def enough_gas(airplane, time_spent):
@@ -144,7 +153,8 @@ def calculate_fitness(chromosome, airport):
     for gene in chromosome:
         if gene.expected_landing_time - time_spent > 0:
             time_spent += gene.expected_landing_time - time_spent  # If the plane can land, check if it has enough fuel and arrived on time
-        runway_free = check_free_runway(airport, time_spent)
+
+        runway_free, value = check_free_runway(airport, time_spent)
         if runway_free != -1:
             check_gas = enough_gas(gene, time_spent)
             if check_gas:
@@ -164,13 +174,14 @@ def calculate_fitness(chromosome, airport):
                 # Mutate the third runway
                 airport.mutate_runway3(time_spent)
         else:
-            # If the plane cannot land, add 3 minutes to the time spent and check again
-            time_spent += 3
-            runway_free = check_free_runway(airport, time_spent)
+            # If the plane cannot land, add 3 - min(waiting time) minutes to the time spent and check again
+            time_spent += value
+            runway_free, value = check_free_runway(airport, time_spent)
             check_gas = enough_gas(gene, time_spent)
             if check_gas:
                 # Add 2 points if the plane has enough fuel
                 fitness += 2
+
             check_time = on_time(gene, time_spent)
             if check_time:
                 # Add 1 point if the plane arrived on time
@@ -205,6 +216,25 @@ def get_fitness(chromosomes):
     return total_fitness
 
 
+def order_c(chromosome):
+    fitness_by_order = 0
+
+    # Check if the chromosome has at least two genes
+    if len(chromosome) >= 2:
+        # Initialize the previous landing time
+        prev_landing_time = chromosome[0].expected_landing_time
+
+        # Iterate over the genes in the chromosome starting from the second one
+        for gene in chromosome[1:]:
+            # Compare the current landing time with the previous one
+            if gene.expected_landing_time >= prev_landing_time:
+                # If the landing time is in ascending order, increment the fitness score
+                fitness_by_order += 1
+            # Update the previous landing time for the next iteration
+            prev_landing_time = gene.expected_landing_time
+
+    return fitness_by_order
+
 def roulette_selection(chromosomes):
     """
     Selects a subset of chromosomes using roulette wheel selection.
@@ -219,12 +249,14 @@ def roulette_selection(chromosomes):
     total_fitness = get_fitness(chromosomes)
     selected = []
     not_selected = []
-    selection_probabilities = [(chromosome, fitness / total_fitness) for chromosome, fitness in chromosomes]
+
+    selection_probabilities = [(chromosome, fitness / total_fitness) for chromosome, fitness in
+                               chromosomes]
     cumulative_probabilities = [(selection_probabilities[i][0], sum([p[1] for p in selection_probabilities[:i + 1]]))
                                 for i in range(len(selection_probabilities))]
 
     for chromosome, cumulative_prob in cumulative_probabilities:
-        if cumulative_prob <= random.uniform(0, 1):
+        if cumulative_prob <= random.uniform(0, 1) or order_c(chromosome) > 0.2*len(chromosome):
             selected.append(chromosome)
         else:
             not_selected.append(chromosome)
@@ -294,8 +326,12 @@ def reproduction(chromosome1, chromosome2):
         point1, point2 = point2, point1
 
     # Perform crossover
-    new_chromosome1 = chromosome1[:point1] + [gene for gene in chromosome2 if gene not in (chromosome1[:point1]+chromosome1[point2:])] + chromosome1[point2:]
-    new_chromosome2 = chromosome2[:point1] + [gene for gene in chromosome1 if gene not in (chromosome2[:point1]+chromosome2[point2:])] + chromosome2[point2:]
+    new_chromosome1 = chromosome1[:point1] + [gene for gene in chromosome2 if
+                                              gene not in (chromosome1[:point1] + chromosome1[point2:])] + chromosome1[
+                                                                                                           point2:]
+    new_chromosome2 = chromosome2[:point1] + [gene for gene in chromosome1 if
+                                              gene not in (chromosome2[:point1] + chromosome2[point2:])] + chromosome2[
+                                                                                                           point2:]
 
     return new_chromosome1, new_chromosome2
 
@@ -334,7 +370,9 @@ def mutation_all(chromosomes):
     for chromosome in chromosomes:
         go_to_mutation = random.choice([0, 1])
         if go_to_mutation:
-            new_chromosome = mutation(chromosome)
+            new_chromosome = chromosome
+            for _ in range(int(len(chromosome) * 0.2)):
+                new_chromosome = mutation(chromosome)
             new_generation.append(new_chromosome)
         else:
             new_generation.append(chromosome)
@@ -363,7 +401,6 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
 
     population = generate_chromosomes(population_size)  # Generate a population with different orders for the same
     # planes.
-
     optimal_fitness = population_size * 3  # This is the optimal_fitness because safe landing is valued at 2 points and
     # good schedule 1 point.
     current_fitness_of_best_chromosome = 0
@@ -380,7 +417,6 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
                 current_fitness_of_best_chromosome = fitness
                 best_chromosome = chromosome
             population_fitness.append((chromosome, fitness))
-            print(current_fitness_of_best_chromosome)
         # Selection of the best chromosomes according to a heuristic  #To check
         if selection_method == "roulette":
             best_chromosomes, not_selected = roulette_selection(population_fitness)
@@ -409,8 +445,8 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
 # Reproduction is
 # Mutation is Working fine
 
-best_chromosome, fitness = geneticAI(50, 10000, "roulette")
+best_chromosome, fitness = geneticAI(10, 10000, "roulette")
 
+for i in best_chromosome:
+    print(i.print_airplane())
 print(fitness)
-
-
