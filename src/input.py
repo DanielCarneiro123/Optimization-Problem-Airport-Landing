@@ -18,6 +18,9 @@ class Airplane:
         return f"Fuel level: {self.arriving_fuel_level}, Fuel consumption rate: {self.fuel_consumption_rate}, Expected landing time: {self.expected_landing_time}, Actual landing time: {self.actual_landing_time}, Safety: {self.safe}"
 
     
+  
+    
+    
     def is_gonna_crash(self):
         actual_fuel_needed = self.fuel_consumption_rate * (self.actual_landing_time - self.expected_landing_time)
         
@@ -25,8 +28,8 @@ class Airplane:
     
     def ensure_enough_fuel(self):
         fuel_needed = self.fuel_consumption_rate * 60
-        # Ensure arriving fuel level is enough for one hour of flight
-        return self.arriving_fuel_level >= fuel_needed
+        fuel_left = (self.arriving_fuel_level - self.fuel_consumption_rate*self.expected_landing_time)
+        return fuel_left >= fuel_needed
     
 class LandingStrip:
     def __init__(self):
