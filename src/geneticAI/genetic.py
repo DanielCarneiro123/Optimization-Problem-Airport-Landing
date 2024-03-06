@@ -521,7 +521,6 @@ def print_results(chromosome,fitness):
     count_safe = 0
     count_crashes = 0
     count_late = 0
-    print(2)
     for gene in chromosome:
         if gene.on_time == True:
             count_time += 1
