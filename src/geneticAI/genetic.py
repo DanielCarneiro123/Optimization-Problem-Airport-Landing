@@ -7,11 +7,13 @@ class Airplane:
         self.arriving_fuel_level = int(random.uniform(100000, 500000))  # Level of fuel for the plane
         self.fuel_consumption_rate = int(random.uniform(1, 2))  # Fuel consumption rate
         self.expected_landing_time = int(random.uniform(1, 10000))  # Expected time to reach the destination
-
+        self.safe_landing = False
+        self.on_time = False
+        self.actual_landing_time = None
     def __eq__(self, other):
         if not isinstance(other, Airplane):
             return NotImplemented
-        return self.arriving_fuel_level == other.arriving_fuel_level and self.fuel_consumption_rate == other.fuel_consumption_rate and self.expected_landing_time == other.expected_landing_time
+        return self.arriving_fuel_level == other.arriving_fuel_level and self.fuel_consumption_rate == other.fuel_consumption_rate and self.expected_landing_time == other.expected_landing_time and self.actual_landing_time == other.actual_landing_time and self.safe_landing == other.safe_landing and self.on_time == other.on_time 
 
     def print_airplane(self):
         print("\n" + "=" * 30)
@@ -21,6 +23,9 @@ class Airplane:
         print("1. Arriving Fuel Level: {} gallons".format(self.arriving_fuel_level))
         print("2. Fuel Consumption Rate: {} gallons per minute".format(self.fuel_consumption_rate))
         print("3. Expected Landing Time: {} minutes".format(self.expected_landing_time))
+        print("4. Actual Landing Time: {} minutes".format(self.actual_landing_time))
+        print("5. Safe Laning Time: {} minutes".format(self.safe_landing))
+        print("6. On Time: {} minutes".format(self.on_time))
         print("\n" + "=" * 30)
 
     def __copy__(self):
@@ -28,6 +33,9 @@ class Airplane:
         new_airplane.arriving_fuel_level = self.arriving_fuel_level
         new_airplane.fuel_consumption_rate = self.fuel_consumption_rate
         new_airplane.expected_landing_time = self.expected_landing_time
+        new_airplane.safe_landing = self.safe_landing
+        new_airplane.on_time = self.on_time
+        new_airplane.actual_landing_time = self.actual_landing_time
         return new_airplane
 
 
@@ -156,6 +164,7 @@ def calculate_fitness(chromosome, airport):
 
         runway_free, value = check_free_runway(airport, time_spent)
         if runway_free != -1:
+            gene.actual_landing_time = time_spent
             check_gas = enough_gas(gene, time_spent)
             if check_gas:
                 # Add 2 points if the plane has enough fuel
@@ -176,12 +185,12 @@ def calculate_fitness(chromosome, airport):
         else:
             # If the plane cannot land, add 3 - min(waiting time) minutes to the time spent and check again
             time_spent += value
+            gene.actual_landing_time = time_spent
             runway_free, value = check_free_runway(airport, time_spent)
             check_gas = enough_gas(gene, time_spent)
             if check_gas:
                 # Add 2 points if the plane has enough fuel
                 fitness += 2
-
             check_time = on_time(gene, time_spent)
             if check_time:
                 # Add 1 point if the plane arrived on time
@@ -440,13 +449,109 @@ def geneticAI(population_size, max_number_of_iterations, selection_method):
         i += 1
     return best_chromosome, current_fitness_of_best_chromosome
 
+def test_fitness(chromosome,airport):
+    fitness = 0
+    time_spent = 0
+    for gene in chromosome:
+        if gene.expected_landing_time - time_spent > 0:
+            time_spent += gene.expected_landing_time - time_spent  # If the plane can land, check if it has enough fuel and arrived on time
 
-# Generation of population is working fine
-# Reproduction is
-# Mutation is Working fine
+        runway_free, value = check_free_runway(airport, time_spent)
+        if runway_free != -1:
+            gene.actual_landing_time = time_spent
+            check_gas = enough_gas(gene, time_spent)
+            if check_gas:
+                gene.safe_landing = True
+                # Add 2 points if the plane has enough fuel
+                fitness += 2
+            else:
+                gene.safe_landing = False
+            check_time = on_time(gene, time_spent)
+            if check_time:
+                gene.on_time = True
+                # Add 1 point if the plane arrived on time
+                fitness += 1
+            else:
+                gene.on_time = False
+            if runway_free == 0:
+                # Mutate the first runway
+                airport.mutate_runway1(time_spent)
+            elif runway_free == 1:
+                # Mutate the second runway
+                airport.mutate_runway2(time_spent)
+            else:
+                # Mutate the third runway
+                airport.mutate_runway3(time_spent)
+        else:
+            # If the plane cannot land, add 3 - min(waiting time) minutes to the time spent and check again
+            time_spent += value
+            gene.actual_landing_time = time_spent
+            runway_free, value = check_free_runway(airport, time_spent)
+            check_gas = enough_gas(gene, time_spent)
+            if check_gas:
+                gene.safe_landing = True
+                # Add 2 points if the plane has enough fuel
+                fitness += 2
+            else:
+                gene.safe_landing = False
+            check_time = on_time(gene, time_spent)
+            if check_time:
+                gene.on_time = True
+                # Add 1 point if the plane arrived on time
+                fitness += 1
+            else:
+                gene.on_time = False
+            if runway_free == 0:
+                # Mutate the first runway
+                airport.mutate_runway1(time_spent)
+            elif runway_free == 1:
+                # Mutate the second runway
+                airport.mutate_runway2(time_spent)
+            elif runway_free == 2:
+                # Mutate the third runway
+                airport.mutate_runway3(time_spent)
+            else:
+                raise ValueError("Double check on the runway is impossible to happen")
+    return fitness
 
-best_chromosome, fitness = geneticAI(10, 10000, "roulette")
+def print_results(chromosome,fitness):
+    airport = Airport()
+    test_fitness(chromosome,copy.copy(airport))
+    count_time = 0
+    count_safe = 0
+    count_crashes = 0
+    count_late = 0
+    print(2)
+    for gene in chromosome:
+        if gene.on_time == True:
+            count_time += 1
+        else:
+            count_late += 1
+        
+        if gene.safe_landing == True:
+            count_safe += 1
+        else:
+            count_crashes += 1
 
-for i in best_chromosome:
-    print(i.print_airplane())
-print(fitness)
+        gene.print_airplane()
+
+    print("The number of planes that arrived at time: {}".format(count_time))
+    print("The number of planes that arrived late: {}".format(count_late))
+    print("The number of planes that arrived safely: {}".format(count_safe))
+    print("The number of planes that crashed: {}".format(count_crashes))
+
+    max_fit_score = 3*len(chromosome)
+    print("The max fitness score is {} and the fitness for the optimal chromosome is {}".format(max_fit_score,fitness))
+
+    
+
+
+def main():
+    population_size = 100
+    max_number_of_iterations = 100
+    selection_method = "roulette"
+    best_chromosome, fitness = geneticAI(population_size, max_number_of_iterations, selection_method)
+    print_results(best_chromosome, fitness)
+
+if __name__ == "__main__":
+    main()
