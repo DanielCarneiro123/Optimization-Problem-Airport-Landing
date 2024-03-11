@@ -22,6 +22,12 @@ class Airplane:
   
     
     
+    def is_gonna_crash_init(self):
+        
+        actual_fuel_needed = self.fuel_consumption_rate * self.expected_landing_time
+        
+        return self.arriving_fuel_level < actual_fuel_needed
+    
     def is_gonna_crash(self):
         
         actual_fuel_needed = self.fuel_consumption_rate * self.actual_landing_time
@@ -123,8 +129,8 @@ def generate_neighbors(airplanes):
 
 def generate_initial_solution(airplanes):
     # Sort airplanes based on a combination of expected landing time and fuel level
-    # initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time, -x.arriving_fuel_level))
-    return airplanes
+    initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time, -x.arriving_fuel_level))
+    return initial_solution
 
 
 def tabu_search(max_iterations, tabu_size, airplanes):
@@ -191,71 +197,92 @@ def tabu_search(max_iterations, tabu_size, airplanes):
 
 
 def main():
-     
-    airplane1 = Airplane(1299, 20, 59)
-    airplane2 = Airplane(1299, 20, 59)
-    airplane3 = Airplane(1299, 20, 59)
-    airplane4 = Airplane(1221, 20, 61)
-    airplane5 = Airplane(19, 20, 49)
-    airplane6 = Airplane(1600, 20, 39)
-    airplane7 = Airplane(1600, 20, 29)
-    airplane8 = Airplane(1600, 20, 19)
-    airplane9 = Airplane(1600, 20, 9)
-    airplane10 = Airplane(1600, 20, 9)
-    airplane11 = Airplane(1300, 20, 90)
-    airplane12 = Airplane(1500, 20, 89)
-    airplane13 = Airplane(1300, 20, 490)
-    airplane14 = Airplane(1300, 20, 89)
-    airplane15 = Airplane(1300, 20, 149)
-    airplane16 = Airplane(1600, 20, 39)
-    airplane17 = Airplane(1600, 20, 29)
-    airplane18 = Airplane(1600, 20, 19)
-    airplane19 = Airplane(1600, 20, 9)
-    airplane20 = Airplane(1600, 20, 9)
-    airplane21 = Airplane(1300, 20, 90)
-    airplane22 = Airplane(1500, 20, 89)
-    airplane23 = Airplane(1300, 20, 90)
-    airplane24 = Airplane(1600, 20, 589)
-    airplane25 = Airplane(1300, 20, 49)
-    airplane26 = Airplane(1600, 20, 39)
-    airplane27 = Airplane(1600, 20, 29)
-    airplane28 = Airplane(1600, 20, 19)
-    airplane29 = Airplane(1600, 20, 9)
-    airplane30 = Airplane(1600, 20, 559)
-    airplane31 = Airplane(1300, 20, 90)
-    airplane32 = Airplane(1500, 20, 89)
-    airplane33 = Airplane(1300, 20, 590)
-    airplane34 = Airplane(1600, 20, 89)
-    airplane35 = Airplane(1300, 20, 49)
-    airplane36 = Airplane(1600, 20, 39)
-    airplane37 = Airplane(1600, 20, 529)
-    airplane38 = Airplane(1600, 20, 19)
-    airplane39 = Airplane(1600, 20, 9)
-    airplane40 = Airplane(1600, 20, 9)
-    airplane41 = Airplane(1300, 20, 490)
-    airplane42 = Airplane(1500, 20, 89)
-    airplane43 = Airplane(1300, 20, 90)
-    airplane44 = Airplane(1600, 20, 489)
-    airplane45 = Airplane(1300, 20, 49)
-    airplane46 = Airplane(1600, 20, 39)
-    airplane47 = Airplane(1600, 20, 29)
-    airplane48 = Airplane(1600, 20, 19)
-    airplane49 = Airplane(1600, 20, 449)
-    airplane50 = Airplane(1100, 20, 9)
+    
+
+    airplane1 = Airplane(1000, 15, 0)
+    airplane2 = Airplane(2000, 25, 20)
+    airplane3 = Airplane(1500, 20, 50)
+    airplane4 = Airplane(1800, 18, 70)
+    airplane5 = Airplane(2500, 22, 40)
+    airplane6 = Airplane(1200, 12, 80)
+    airplane7 = Airplane(2800, 30, 20)
+    airplane8 = Airplane(2000, 28, 60)
+    airplane9 = Airplane(1600, 16, 10)
+    airplane10 = Airplane(2200, 24, 85)
+    airplane11 = Airplane(2700, 21, 30)
+    airplane12 = Airplane(1900, 17, 75)
+    airplane13 = Airplane(2300, 26, 45)
+    airplane14 = Airplane(1400, 14, 55)
+    airplane15 = Airplane(3000, 29, 5)
+    airplane16 = Airplane(1750, 19, 65)
+    airplane17 = Airplane(2100, 23, 20)
+    airplane18 = Airplane(2600, 27, 25)
+    airplane19 = Airplane(1700, 13, 35)
+    airplane20 = Airplane(2400, 20, 15)
+    airplane21 = Airplane(2600, 22, 80)
+    airplane22 = Airplane(1500, 16, 65)
+    airplane23 = Airplane(2200, 28, 30)
+    airplane24 = Airplane(2800, 25, 45)
+    airplane25 = Airplane(1900, 12, 90)
+    airplane26 = Airplane(1400, 19, 50)
+    airplane27 = Airplane(3000, 24, 75)
+    airplane28 = Airplane(2000, 17, 25)
+    airplane29 = Airplane(2500, 30, 60)
+    airplane30 = Airplane(1800, 14, 40)
+    airplane31 = Airplane(2700, 23, 10)
+    airplane32 = Airplane(1700, 27, 20)
+    airplane33 = Airplane(2300, 15, 20)
+    airplane34 = Airplane(1600, 21, 55)
+    airplane35 = Airplane(2900, 18, 95)
+    airplane36 = Airplane(2100, 26, 35)
+    airplane37 = Airplane(2400, 13, 5)
+    airplane38 = Airplane(2300, 29, 70)
+    airplane39 = Airplane(2500, 22, 15)
+    airplane40 = Airplane(1900, 16, 50)
+    airplane41 = Airplane(1800, 20, 85)
+    airplane42 = Airplane(2700, 24, 30)
+    airplane43 = Airplane(1400, 28, 20)
+    airplane44 = Airplane(3000, 17, 25)
+    airplane45 = Airplane(2200, 19, 90)
+    airplane46 = Airplane(1600, 27, 55)
+    airplane47 = Airplane(2100, 15, 20)
+    airplane48 = Airplane(2900, 25, 75)
+    airplane49 = Airplane(1700, 23, 5)
+    airplane50 = Airplane(2300, 30, 40)
+    airplane51 = Airplane(2000, 14, 70)
+    airplane52 = Airplane(2500, 18, 35)
+    airplane53 = Airplane(1900, 26, 20)
+    airplane54 = Airplane(2700, 16, 15)
+    airplane55 = Airplane(1400, 22, 50)
+    airplane56 = Airplane(2800, 19, 95)
+    airplane57 = Airplane(2200, 27, 25)
+    airplane58 = Airplane(1600, 23, 60)
+    airplane59 = Airplane(3000, 15, 10)
+    airplane60 = Airplane(1800, 21, 45)
+
+   
+
 
     # Store airplanes in a list
-    airplanes = [airplane1, airplane2, airplane3, airplane4]
-                 
-    '''   , airplane5, airplane6, airplane7, airplane8, airplane9, airplane10,
+    airplanes = [airplane1, airplane2, airplane9, airplane10
+                 , airplane5, airplane6, airplane7, airplane8, airplane3, airplane4,
                 airplane11, airplane12, airplane13, airplane14, airplane15, airplane16, airplane17, airplane18, airplane19, airplane20,
                 airplane21, airplane22, airplane23, airplane24, airplane25, airplane26, airplane27, airplane28, airplane29, airplane30,
                 airplane31, airplane32, airplane33, airplane34, airplane35, airplane36, airplane37, airplane38, airplane39, airplane40,
-                airplane41, airplane42, airplane43, airplane44, airplane45, airplane46, airplane47, airplane48, airplane49, airplane50]'''
+                airplane41, airplane42, airplane43, airplane44, airplane45, airplane46, airplane47, airplane48, airplane49, airplane50,
+                 airplane51, airplane52, airplane53, airplane54, airplane55, airplane56, airplane57, airplane58, airplane59, airplane60]
     
-   
-    
+    '''
+    counter = 0
+    for airplane in airplanes:
+        counter += 1
+        if airplane.is_gonna_crash_init():
+            print(counter)
+            print("isgonna crash")
+    '''
+
     # Perform tabu search
-    best_solution = tabu_search(max_iterations=1, tabu_size=10, airplanes=airplanes)
+    best_solution = tabu_search(max_iterations=4, tabu_size=100, airplanes=airplanes)
 
     # Print the best solution
     print("BEST SOLUTION:")
