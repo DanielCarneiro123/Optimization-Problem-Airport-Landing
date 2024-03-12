@@ -166,20 +166,41 @@ def main():
                             print("Please enter a number between 1 and 60.")
                             print("==============================================")
                         else:
-                            # airplanes = generate_airplanes
-                            '''print("==============================================")
+                            '''# airplanes = generate_airplanes
+                            print("==============================================")
+                            print("Choose a starting temperature: ")
+                            print("==============================================")
+                            starting_temperature = float(input())
+                            print("==============================================")
+                            print(" ")
+                            print("==============================================")
+                            print("==============================================")
+                            print("Choose a cooling rate:")
+                            print("==============================================")
+                            cooling_rate = float(input())
+                            print("==============================================")
+                            print(" ")
+                            print("==============================================")
+                            print("==============================================")
+                            print("Choose a stopping temperature: ")
+                            print("==============================================")
+                            stopping_temperature = float(input())
+                            print("==============================================")
+                            print(" ")
+                            print("==============================================")
+                            print("==============================================")
                             print("How many iterations do you want to perform?")
                             print("==============================================")
                             max_iterations = int(input())
                             print("==============================================")
                             print(" ")
-                            print("==============================================")'''
+                            print("==============================================")
                             # tabu_size = int(input())
                             # Perform tabu search
-                            # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
-                            best_solution, best_cost = simulated_annealing(num_airplanes)
+                            # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)'''
+                            best_solution, best_cost = simulated_annealing(airplanes)
                             print("BEST SOLUTION:")
-                            # print_airplanes_and_strips(best_solution)
+                            print_airplanes_and_strips(best_solution)
                             break
                     except ValueError:
                         print("Invalid input. Please enter a valid number.")

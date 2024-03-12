@@ -21,20 +21,18 @@ def simulated_annealing(airplanes, initial_temperature=1000, cooling_rate=0.95, 
     num_of_crashes_sol = 100000
 
     while temperature > stopping_temperature and iteration < max_iterations:
-
+        print("aaa")
         neighbors = generate_neighbors(current_solution)
         for neighbor in neighbors:
             landing_strips, neighbor_value, unsafe_waiting, curr_num_of_crashes = generateResults(neighbor)
 
-            delta_cost = neighbor_value - current_cost
+            delta_cost = neighbor_value - best_cost
             if delta_cost < 0 or math.exp(-delta_cost / temperature) > random.random():
-                current_solution = neighbor
-                current_cost = neighbor_value
-                if current_cost < best_cost:
-                    best_solution = neighbor
-                    best_cost = current_cost
-                    unsafe_planes_sol = unsafe_planes
-                    num_of_crashes_sol = num_of_crashes
+                print("dsadsa")
+                best_solution = neighbor
+                best_cost = neighbor_value
+                unsafe_planes_sol = unsafe_planes
+                num_of_crashes_sol = num_of_crashes
                 
         temperature *= cooling_rate
         iteration += 1
