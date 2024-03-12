@@ -1,6 +1,7 @@
 from airplane import *
 from landing_strip import *
 from tabu_search import *
+from simulated_annealing import *
 
 
 
@@ -88,7 +89,7 @@ def main():
             print(counter)
             print("isgonna crash")
     '''
-
+    best_solution, best_cost = simulated_annealing(airplanes)
     # Perform tabu search
     best_solution = tabu_search(max_iterations=3, tabu_size=100, airplanes=airplanes)
 
