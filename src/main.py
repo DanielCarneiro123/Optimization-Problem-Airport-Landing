@@ -80,6 +80,18 @@ def main():
                 airplane41, airplane42, airplane43, airplane44, airplane45, airplane46, airplane47, airplane48, airplane49, airplane50,
                  airplane51, airplane52, airplane53, airplane54, airplane55, airplane56, airplane57, airplane58, airplane59, airplane60]
     
+    def print_airplanes_and_strips(best_solution):
+        landing_strips, sum_difference, unsafe_waiting, n = generateResults(best_solution)
+        print("Sum of differences between actual and expected landing times:", sum_difference)
+        for i, landing_strip in enumerate(landing_strips):
+            print(f"Landing Strip {i}:")
+            for airplane in landing_strip.current_airplanes:
+                print(airplane)
+                if (airplane.is_gonna_crash()):
+                    print("CRAAAAAAAAAAAAAAAASH")
+        print("Crashes:", n)
+        print("Unsafe waiting:", unsafe_waiting)
+        
     '''
     counter = 0
     for airplane in airplanes:
@@ -88,28 +100,88 @@ def main():
             print(counter)
             print("isgonna crash")
     '''
+    string_resposta = ""
 
-    # Perform tabu search
-    best_solution = tabu_search(max_iterations=3, tabu_size=100, airplanes=airplanes)
-
-    # Print the best solution
-    print("BEST SOLUTION:")
-    print_airplanes_and_strips(best_solution)
-    
+    while string_resposta != "q":
+        print("==================== MENU ====================")
+        print("[PRESS 1] - Tabu Search")
+        print("[PRESS 2] - Simulated Annealing")
+        print("[PRESS 3] - Genetic Algorithm")
+        print("[PRESS q] - Exit the menu")
+        print("==============================================")
+        string_resposta = input()
+        if string_resposta == "q":
+            break
+        if string_resposta == "1":
+            while True:
+                print("==================== MENU ====================")
+                print("How many airplanes do you wish to simulate? (1-60)")
+                print("[PRESS e] - Go Back")
+                print("==============================================")
+                num_airplanes_input = input()
+                if num_airplanes_input == "e":
+                    break
         
+                else:
+                    try:
+                        num_airplanes = int(num_airplanes_input)
+                        if num_airplanes < 1 or num_airplanes > 60:
+                            print("==============================================")
+                            print("Please enter a number between 1 and 60.")
+                            print("==============================================")
+                        else:
+                            # airplanes = generate_airplanes
+                            print("==============================================")
+                            print("How many iterations do you want to perform?")
+                            print("==============================================")
+                            max_iterations = int(input())
+                            print("==============================================")
+                            print("What should be the length of the tabu search? (A bigger tabu length leads to more diversification but to slower convergence towards optimal solution)")
+                            print("==============================================")
+                            tabu_size = int(input())
+                            # Perform tabu search
+                            best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
+                            print("BEST SOLUTION:")
+                            print_airplanes_and_strips(best_solution)
+                            break
+                    except ValueError:
+                        print("Invalid input. Please enter a valid number.")
+        if string_resposta == "2":
+            while True:
+                print("==================== MENU ====================")
+                print("How many airplanes do you wish to simulate? (1-60)")
+                print("[PRESS e] - Go Back")
+                print("==============================================")
+                num_airplanes_input = input()
+                if num_airplanes_input == "e":
+                    break
+        
+                else:
+                    try:
+                        num_airplanes = int(num_airplanes_input)
+                        if num_airplanes < 1 or num_airplanes > 60:
+                            print("==============================================")
+                            print("Please enter a number between 1 and 60.")
+                            print("==============================================")
+                        else:
+                            # airplanes = generate_airplanes
+                            print("==============================================")
+                            print("How many iterations do you want to perform?")
+                            print("==============================================")
+                            max_iterations = int(input())
+                            print("==============================================")
+                            print(" ")
+                            print("==============================================")
+                            # tabu_size = int(input())
+                            # Perform tabu search
+                            # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
+                            print("BEST SOLUTION:")
+                            # print_airplanes_and_strips(best_solution)
+                            break
+                    except ValueError:
+                        print("Invalid input. Please enter a valid number.")
 
 
-def print_airplanes_and_strips(best_solution):
-    landing_strips, sum_difference, unsafe_waiting, n = generateResults(best_solution)
-    print("Sum of differences between actual and expected landing times:", sum_difference)
-    for i, landing_strip in enumerate(landing_strips):
-        print(f"Landing Strip {i}:")
-        for airplane in landing_strip.current_airplanes:
-            print(airplane)
-            if (airplane.is_gonna_crash()):
-                print("CRAAAAAAAAAAAAAAAASH")
-    print("Crashes:", n)
-    print("Unsafe waiting:", unsafe_waiting)
 
 if __name__ == "__main__":
     main()
