@@ -188,9 +188,6 @@ def main():
     best_solution, best_cost = hill_climbing(airplanes)
     print("BEST SOLUTION:")
     print_airplanes_and_strips(best_solution)
-
-
-    
     print("Best cost:", best_cost)
 
 
