@@ -18,7 +18,7 @@ def hill_climbing(airplanes, max_iterations=1000):
         for neighbor in neighbors:
             _,neighbor_value,_,_ = generateResults(neighbor)
 
-            if neighbor_value > cost_neighbor:
+            if neighbor_value < cost_neighbor:
                 current_solution = neighbor
                 cost_neighbor = neighbor_value
                 best_neighbor = neighbor
