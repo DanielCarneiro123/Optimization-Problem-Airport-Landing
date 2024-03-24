@@ -2,6 +2,7 @@ from airplane import *
 from landing_strip import *
 from tabu_search import *
 from simulated_annealing import *
+from hill import *
 
 
 
@@ -108,6 +109,7 @@ def main():
         print("[PRESS 1] - Tabu Search")
         print("[PRESS 2] - Simulated Annealing")
         print("[PRESS 3] - Genetic Algorithm")
+        print("[PRESS 4] - Hill Climbing")
         print("[PRESS q] - Exit the menu")
         print("==============================================")
         string_resposta = input()
@@ -180,6 +182,42 @@ def main():
                             best_solution, best_cost = simulated_annealing(num_airplanes)
                             print("BEST SOLUTION:")
                             # print_airplanes_and_strips(best_solution)
+                            break
+                    except ValueError:
+                        print("Invalid input. Please enter a valid number.")
+        if string_resposta == "4":
+            while True:
+                print("==================== MENU ====================")
+                print("How many airplanes do you wish to simulate? (1-60)")
+                print("[PRESS e] - Go Back")
+                print("==============================================")
+                num_airplanes_input = input()
+                if num_airplanes_input == "e":
+                    break
+
+                
+                else:
+                    try:
+                        num_airplanes = int(num_airplanes_input)
+                        if num_airplanes < 1 or num_airplanes > 60:
+                            print("==============================================")
+                            print("Please enter a number between 1 and 60.")
+                            print("==============================================")
+                        else:
+                            # airplanes = generate_airplanes
+                            '''print("==============================================")
+                            print("How many iterations do you want to perform?")
+                            print("==============================================")
+                            max_iterations = int(input())
+                            print("==============================================")
+                            print(" ")
+                            print("==============================================")'''
+                            # tabu_size = int(input())
+                            # Perform tabu search
+                            # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
+                            best_solution, best_cost = hill_climbing(airplanes)
+                            print("BEST SOLUTION:")
+                            print_airplanes_and_strips(best_solution)
                             break
                     except ValueError:
                         print("Invalid input. Please enter a valid number.")
