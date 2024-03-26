@@ -2,6 +2,7 @@ from airplane import *
 from landing_strip import *
 from tabu_search import *
 from simulated_annealing import *
+from genetic import*
 from hill import *
 from utils import *
 
@@ -176,6 +177,57 @@ def main():
                             break
                     except ValueError:
                         print("Invalid input. Please enter a valid number.")
+        if string_resposta == "3":
+             while True:
+                print("==================== MENU ====================")
+                print("How many airplanes do you wish to simulate? (1-60)")
+                print("[PRESS e] - Go Back")
+                print("==============================================")
+                num_airplanes_input = input()
+                if num_airplanes_input == "e":
+                    break
+                else:
+                    try:
+                        num_airplanes = int(num_airplanes_input)
+                        if num_airplanes < 1 or num_airplanes > 60:
+                            print("==============================================")
+                            print("Please enter a number between 1 and 60.")
+                            print("==============================================")
+                        else:
+                            
+                            population_size = -1
+                            while True:
+                                print("==============================================")
+                                print("How many chromosomes do you want in the population? (100-1000)")
+                                print("==============================================")
+                                
+                                population_size = int(input())
+
+                                if 100 <= population_size <= 1000:
+                                    break
+                                else:
+                                    print("Invalid input. Please enter a number between 100 and 1000 (inclusive).")
+                            
+                            max_iterations = -1
+                            while True:
+                                print("==============================================")
+                                print("How many iterations do you want to perform? (1-10000)")
+                                print("==============================================")
+                                
+                                max_iterations = int(input())
+
+                                if 1 <= max_iterations <= 10000:
+                                    break
+                                else:
+                                    print("Invalid input. Please enter a number between 1 and 10000 (inclusive).")
+                            
+                            best_solution, _ = geneticAI(airplanes[:num_airplanes],population_size,max_iterations,"roulette",0.05)
+                            print("BEST SOLUTION:")
+                            print_airplanes_and_strips(best_solution)
+                            break
+                    except ValueError:
+                        print("Invalid input. Please enter a valid number.")
+
         if string_resposta == "4":
             while True:
                 print("==================== MENU ====================")

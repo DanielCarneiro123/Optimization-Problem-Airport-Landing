@@ -85,7 +85,7 @@ def reproduction(parent1, parent2):
         while (offspring2[i] in mapping_2):
             offspring2[i] = mapping_2[offspring2[i]]
 
-
+    
     return offspring1, offspring2
 
 def reproduction_all(chromosomes, size_new_gen):
@@ -208,48 +208,4 @@ def geneticAI(airplanes, population_size, max_number_of_iterations, selection_me
         population = new_generation
 
     return best_chromosome, current_fitness_of_best_chromosome
-def main():
-    population_size = 100
-    max_number_of_iterations = 1000
-    elite_percentage = 0.05
-    selection_method = "roulette"
 
-
-    airplane1 = Airplane(1000, 15, 0)
-    airplane2 = Airplane(2000, 25, 20)
-    airplane3 = Airplane(1500, 20, 50)  
-    airplane4 = Airplane(1800, 18, 70)
-    airplane5 = Airplane(2500, 22, 40)
-    airplane6 = Airplane(1200, 12, 80)
-    airplane7 = Airplane(2800, 30, 20)
-    airplane8 = Airplane(2000, 28, 60)
-    airplane9 = Airplane(1600, 16, 10)
-    airplane10 = Airplane(2200, 24, 85)
-
-
-   
-    # Store airplanes in a list
-    airplanes = [airplane1, airplane2, airplane9, airplane10
-                 , airplane5, airplane6, airplane7, airplane8, airplane3, airplane4,
-    ]
- 
-    
-    best_solution,best_cost = geneticAI(airplanes,population_size, max_number_of_iterations, selection_method,elite_percentage)
-    print("BEST SOLUTION:")
-    print_airplanes_and_strips(best_solution)
-    print("Best cost:", best_cost)
-
-def print_airplanes_and_strips(best_solution):
-    landing_strips, sum_difference, unsafe_waiting, n = generateResults(best_solution)
-    print("Sum of differences between actual and expected landing times:", sum_difference)
-    for i, landing_strip in enumerate(landing_strips):
-        print(f"Landing Strip {i}:")
-        for airplane in landing_strip.current_airplanes:
-            print(airplane)
-            if (airplane.is_gonna_crash()):
-                print("CRAAAAAAAAAAAAAAAASH")
-    print("Crashes:", n)
-    print("Unsafe waiting:", unsafe_waiting)
-
-if __name__ == "__main__":
-    main()
