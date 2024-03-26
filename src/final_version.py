@@ -3,7 +3,7 @@ import pandas as pd
 import math
 import copy
 import random
-
+'''
 class Airplane:
     def __init__(self, fuel_level, fuel_consumption_rate, expected_landing_time):
         self.arriving_fuel_level = fuel_level
@@ -132,7 +132,7 @@ def cost_function(solution):
     return cost
 
 
-'''def neighbor(solucao):
+def neighbor(solucao):
     nova_solucao = copy.deepcopy(solucao)  
 
     for i in range(len(nova_solucao)):
@@ -150,7 +150,7 @@ def cost_function(solution):
                 nova_solucao[nova_pista_index].add_airplane(aviao) 
                 nova_solucao[i].remove_airplane(aviao)  
 
-    return nova_solucao'''
+    return nova_solucao
 
 
 
@@ -238,3 +238,5 @@ def print_airplanes_and_strips(best_solution):
 
 if __name__ == "__main__":
     main()
+
+'''
