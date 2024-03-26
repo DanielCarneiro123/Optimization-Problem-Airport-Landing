@@ -1,6 +1,6 @@
 from airplane import *
 from landing_strip import *
-from tabu_search import *
+from utils import *
 
 
 

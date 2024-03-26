@@ -3,6 +3,7 @@ from landing_strip import *
 from tabu_search import *
 from simulated_annealing import *
 from hill import *
+from utils import *
 
 
 
@@ -82,17 +83,7 @@ def main():
                 airplane41, airplane42, airplane43, airplane44, airplane45, airplane46, airplane47, airplane48, airplane49, airplane50,
                  airplane51, airplane52, airplane53, airplane54, airplane55, airplane56, airplane57, airplane58, airplane59, airplane60]
     
-    def print_airplanes_and_strips(best_solution):
-        landing_strips, sum_difference, unsafe_waiting, n = generateResults(best_solution)
-        print("Sum of differences between actual and expected landing times:", sum_difference)
-        for i, landing_strip in enumerate(landing_strips):
-            print(f"Landing Strip {i}:")
-            for airplane in landing_strip.current_airplanes:
-                print(airplane)
-                if (airplane.is_gonna_crash()):
-                    print("CRAAAAAAAAAAAAAAAASH")
-        print("Crashes:", n)
-        print("Unsafe waiting:", unsafe_waiting)
+  
         
     '''
     counter = 0
@@ -143,7 +134,7 @@ def main():
                             print("==============================================")
                             tabu_size = int(input())
                             # Perform tabu search
-                            best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
+                            best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes, output_file="output.txt")
                             print("BEST SOLUTION:")
                             print_airplanes_and_strips(best_solution)
                             break
