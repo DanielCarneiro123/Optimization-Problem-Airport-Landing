@@ -5,6 +5,7 @@ from simulated_annealing import *
 from genetic import*
 from hill import *
 from utils import *
+import time
 
 
 
@@ -203,10 +204,22 @@ def main():
                             print("What should be the length of the tabu search? (A bigger tabu length leads to more diversification but to slower convergence towards optimal solution)")
                             print("==============================================")
                             tabu_size = int(input())
-                            # Perform tabu search
+                            
+                            start_time = time.time()
+
                             best_solution = tabu_search(max_iterations, tabu_size, airplanes[:num_airplanes], output_file="output.txt")
+
+                            
+                            end_time = time.time()
+
+                            
+                            elapsed_time = end_time - start_time
+
+                            
+                            
                             print("BEST SOLUTION:")
                             print_airplanes_and_strips(best_solution)
+                            print("Time taken for tabu_search function:", elapsed_time, "seconds")
                             break
                     except ValueError:
                         print("Invalid input. Please enter a valid number.")
@@ -240,6 +253,7 @@ def main():
                             # tabu_size = int(input())
                             # Perform tabu search
                             # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
+                            
                             best_solution, best_cost = simulated_annealing(airplanes[:num_airplanes])
                             print("BEST SOLUTION:")
                             # print_airplanes_and_strips(best_solution)
@@ -327,9 +341,15 @@ def main():
                             # tabu_size = int(input())
                             # Perform tabu search
                             # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
+                            start_time = time.time()
                             best_solution, best_cost = hill_climbing(airplanes[:num_airplanes], "output.txt")
+                            end_time = time.time()
+
+                            
+                            elapsed_time = end_time - start_time
                             print("BEST SOLUTION:")
                             print_airplanes_and_strips(best_solution)
+                            print("Time taken for hill_climbing_search function:", elapsed_time, "seconds")
                             break
                     except ValueError:
                         print("Invalid input. Please enter a valid number.")
