@@ -8,7 +8,7 @@ import copy
 import random
 
 
-def simulated_annealing(airplanes, initial_temperature=1000, cooling_rate=0.9, stopping_temperature=0.01, max_iterations=50):
+def simulated_annealing(airplanes, initial_temperature=1000, cooling_rate=0.98, stopping_temperature=0.01, max_iterations=100):
     current_solution = generate_initial_solution(airplanes)
     current_cost = float('inf')
     best_solution = current_solution

@@ -48,8 +48,8 @@ def generate_neighbors(airplanes):
 
 
 def generate_initial_solution(airplanes):
-    # Sort airplanes based on a combination of expected landing time and fuel level
-    initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time, -x.arriving_fuel_level))
+    # Sort airplanes based on a combination of expected landing time and fuel
+    initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time, x.arriving_fuel_level/x.fuel_consumption_rate))
     return initial_solution
 
 
