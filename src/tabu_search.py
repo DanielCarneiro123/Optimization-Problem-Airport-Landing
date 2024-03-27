@@ -46,14 +46,14 @@ def tabu_search(max_iterations, tabu_size, airplanes, output_file):
                 best_solution_landing_strips = best_neighbor_landing_strips
                 unsafe_planes_sol = unsafe_planes
                 num_of_crashes_sol = num_of_crashes
-                '''
+                
                 # Write to file
                 f.write(f"New Best Solution:\n" + print_improved_solution(best_solution_landing_strips) + "\n")
                 f.write(f"New Best Solution Value: {best_solution_value}\n")
                 f.write(f"Unsafe Planes: {unsafe_planes_sol}\n")
                 f.write(f"Number of Crashes: {num_of_crashes_sol}\n")
                 f.write('\n')
-                '''
+                
 
             # Update tabu list
             tabu_list.append(best_neighbor)

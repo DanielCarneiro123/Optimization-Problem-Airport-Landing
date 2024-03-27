@@ -11,31 +11,31 @@ from utils import *
 def main():
     
 
-    airplane1 = Airplane(1000, 15, 0)
+    airplane1 = Airplane(1000, 15, 20)
     airplane2 = Airplane(2000, 25, 20)
-    airplane3 = Airplane(1500, 20, 50)
-    airplane4 = Airplane(1800, 18, 70)
-    airplane5 = Airplane(2500, 22, 40)
-    airplane6 = Airplane(1200, 12, 80)
-    airplane7 = Airplane(2800, 30, 20)
-    airplane8 = Airplane(2000, 28, 60)
+    airplane3 = Airplane(1500, 20, 21)
+    airplane4 = Airplane(1800, 18, 22)
+    airplane5 = Airplane(2500, 22, 20)
+    airplane6 = Airplane(1200, 12, 21)
+    airplane7 = Airplane(2800, 30, 25)
+    airplane8 = Airplane(2000, 28, 24)
     airplane9 = Airplane(1600, 16, 10)
     airplane10 = Airplane(2200, 24, 85)
     airplane11 = Airplane(2700, 21, 30)
     airplane12 = Airplane(1900, 17, 75)
     airplane13 = Airplane(2300, 26, 45)
-    airplane14 = Airplane(1400, 14, 55)
-    airplane15 = Airplane(3000, 29, 5)
-    airplane16 = Airplane(1750, 19, 65)
+    airplane14 = Airplane(1400, 14, 25)
+    airplane15 = Airplane(3000, 29, 25)
+    airplane16 = Airplane(1750, 19, 25)
     airplane17 = Airplane(2100, 23, 20)
     airplane18 = Airplane(2600, 27, 25)
     airplane19 = Airplane(1700, 13, 35)
     airplane20 = Airplane(2400, 20, 15)
-    airplane21 = Airplane(2600, 22, 80)
+    airplane21 = Airplane(2600, 22, 23)
     airplane22 = Airplane(1500, 16, 65)
     airplane23 = Airplane(2200, 28, 30)
     airplane24 = Airplane(2800, 25, 45)
-    airplane25 = Airplane(1900, 12, 90)
+    airplane25 = Airplane(1900, 12, 20)
     airplane26 = Airplane(1400, 19, 50)
     airplane27 = Airplane(3000, 24, 75)
     airplane28 = Airplane(2000, 17, 25)
@@ -85,7 +85,11 @@ def main():
                  airplane51, airplane52, airplane53, airplane54, airplane55, airplane56, airplane57, airplane58, airplane59, airplane60]
     
   
-        
+    x = (generate_initial_solution(airplanes=airplanes))
+    for airplane in x:
+        print(airplane)
+        print("\n")
+
     '''
     counter = 0
     for airplane in airplanes:
