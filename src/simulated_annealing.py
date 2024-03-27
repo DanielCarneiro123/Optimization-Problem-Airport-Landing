@@ -8,8 +8,8 @@ import copy
 import random
 
 
-def simulated_annealing(airplanes, initial_temperature=1000, cooling_rate=0.98, stopping_temperature=0.01, max_iterations=100):
-    current_solution = generate_initial_solution(airplanes)
+def simulated_annealing(airplanes, initial_temperature=100000, cooling_rate=0.99, stopping_temperature=0.1, max_iterations=120):
+    current_solution = generate_initial_solution2(airplanes)
     current_cost = float('inf')
     best_solution = current_solution
     best_cost = current_cost
@@ -19,17 +19,17 @@ def simulated_annealing(airplanes, initial_temperature=1000, cooling_rate=0.98, 
     num_of_crashes_sol = 100000
 
     with open("output.txt", "w") as file:
-        while temperature > stopping_temperature and iteration < max_iterations:
-            neighbors = generate_neighbors(current_solution)
+        while (iteration < max_iterations):
+            neighbors = generate_neighbors2(current_solution)
             for neighbor in neighbors:
-                landing_strips, neighbor_value, unsafe_plains, num_of_crashes = generateResults(neighbor)
+                landing_strips, neighbor_value, unsafe_planes, num_of_crashes = generateResults(neighbor)
                 current_solution = neighbor
                 current_cost = neighbor_value
-                delta_cost = neighbor_value - current_cost
-                if (((current_cost < best_cost) and (unsafe_plains <= unsafe_planes_sol) and (num_of_crashes <= num_of_crashes_sol)) or ((unsafe_plains < unsafe_planes_sol) and (num_of_crashes <= num_of_crashes_sol)) or (num_of_crashes < num_of_crashes_sol)) or math.exp(-delta_cost / temperature) > random.random(): 
+                delta_cost = neighbor_value - best_cost
+                if (((neighbor_value < best_cost) and (unsafe_planes <= unsafe_planes_sol) and (num_of_crashes <= num_of_crashes_sol)) or ((unsafe_planes <= unsafe_planes_sol) and (num_of_crashes <= num_of_crashes_sol)) or (num_of_crashes <= num_of_crashes_sol)) and math.exp(-delta_cost / temperature) > random.random(): 
                     best_solution = neighbor
-                    best_cost = current_cost
-                    unsafe_planes_sol = unsafe_plains
+                    best_cost = neighbor_value
+                    unsafe_planes_sol = unsafe_planes
                     num_of_crashes_sol = num_of_crashes
 
             # Escreva as informações no arquivo apenas no final de cada iteração

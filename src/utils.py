@@ -73,6 +73,16 @@ def generate_neighbors(airplanes):
     
     return neighbors
 
+def generate_neighbors2(current_solution, n=5):
+    neighbors = []
+    for _ in range(n):
+        neighbor = current_solution[:]  # Faça uma cópia da solução atual
+        # Realize pequenas modificações na cópia para gerar um vizinho
+        # Por exemplo, troque dois elementos consecutivos
+        index = random.randint(0, len(neighbor) - 2)  # Seleciona um índice válido para troca
+        neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]  # Troca os elementos
+        neighbors.append(neighbor)
+    return neighbors
 
 def generate_initial_solution(airplanes):
     # Sort airplanes based on a combination of expected landing time and fuel
