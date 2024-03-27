@@ -163,6 +163,9 @@ def get_elites(population_fitness,elite_size):
 
 # Doing
 def geneticAI(airplanes, population_size, max_number_of_iterations, selection_method,elite_percentage):
+    if (len(airplanes) == 1):
+        return [airplanes[0]],-1
+    
     population = generate_chromosomes(airplanes, population_size) # Generate population
     current_fitness_of_best_chromosome = float('inf') # Best fitness
     best_chromosome = None # Best chromosome
