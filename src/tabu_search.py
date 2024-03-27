@@ -57,8 +57,10 @@ def tabu_search(max_iterations, tabu_size, airplanes, output_file):
                 f.write(f"New Best Solution Value: {best_solution_value}\n")
                 f.write(f"Unsafe Planes: {unsafe_planes_sol}\n")
                 f.write(f"Number of Crashes: {num_of_crashes_sol}\n")
+                f.write(f"Iteration: {iteration}\n")
                 f.write('\n')
                 '''
+                
                 
 
             # Update tabu list

@@ -268,7 +268,7 @@ def main():
                             print("Please enter a number between 1 and 120.")
                             print("==============================================")
                         else:
-                            '''# airplanes = generate_airplanes
+                            # airplanes = generate_airplanes
                             print("==============================================")
                             print("Choose a starting temperature: ")
                             print("==============================================")
@@ -377,13 +377,13 @@ def main():
                             print("==============================================")
                         else:
                             # airplanes = generate_airplanes
-                            '''print("==============================================")
+                            print("==============================================")
                             print("How many iterations do you want to perform?")
                             print("==============================================")
                             max_iterations = int(input())
                             print("==============================================")
                             print(" ")
-                            print("==============================================")'''
+                            print("==============================================")
                             # tabu_size = int(input())
                             # Perform tabu search
                             # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
