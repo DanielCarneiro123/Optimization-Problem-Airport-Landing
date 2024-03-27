@@ -73,13 +73,19 @@ def main():
 
 
     # Store airplanes in a list
-    airplanes = [airplane1, airplane2, airplane9, airplane10
-                 , airplane5, airplane6, airplane7, airplane8, airplane3, airplane4,
-                airplane11, airplane12, airplane13, airplane14, airplane15, airplane16, airplane17, airplane18, airplane19, airplane20,
-                airplane21, airplane22, airplane23, airplane24, airplane25, airplane26, airplane27, airplane28, airplane29, airplane30,
-                airplane31, airplane32, airplane33, airplane34, airplane35, airplane36, airplane37, airplane38, airplane39, airplane40,
-                airplane41, airplane42, airplane43, airplane44, airplane45, airplane46, airplane47, airplane48, airplane49, airplane50,
-                 airplane51, airplane52, airplane53, airplane54, airplane55, airplane56, airplane57, airplane58, airplane59, airplane60]
+    airplanes = [airplane1, airplane2, airplane9, airplane10,
+             airplane5, airplane6, airplane7, airplane8, airplane3, airplane4,
+             airplane11, airplane12, airplane13, airplane14, airplane15, 
+             airplane16, airplane17, airplane18, airplane19, airplane20,
+             airplane21, airplane22, airplane23, airplane24, airplane25,
+             airplane26, airplane27, airplane28, airplane29, airplane30,
+             airplane31, airplane32, airplane33, airplane34, airplane35,
+             airplane36, airplane37, airplane38, airplane39, airplane40,
+             airplane41, airplane42, airplane43, airplane44, airplane45,
+             airplane46, airplane47, airplane48, airplane49, airplane50,
+             airplane51, airplane52, airplane53, airplane54, airplane55,
+             airplane56, airplane57, airplane58, airplane59, airplane60]
+
     
     def print_airplanes_and_strips(best_solution):
         landing_strips, sum_difference, unsafe_waiting, n = generateResults(best_solution)
