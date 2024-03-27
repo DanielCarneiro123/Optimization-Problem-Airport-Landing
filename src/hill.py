@@ -15,7 +15,7 @@ def hill_climbing(airplanes, output_file, max_iterations=1000):
     iteration = 0
     with open(output_file, 'w') as f:
         while iteration < max_iterations:
-            neighbors = generate_neighbors(current_solution)
+            neighbors = generate_neighbors_random_swaps(current_solution)
             best_neighbor = None
             best_neighbor_value = float('inf')
             num_of_crashes = 100000
