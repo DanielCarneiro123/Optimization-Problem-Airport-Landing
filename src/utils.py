@@ -87,7 +87,7 @@ def generate_initial_solution2(airplanes):
     return initial_solution
 
 def generate_initial_solution3(airplanes):
-    # Sort airplanes based on expected landing time
+    # Sort airplanes based on a combination of expected landing time
     initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time))
     return initial_solution
 
@@ -106,18 +106,19 @@ def generate_neighbors_random_swaps(airplanes):
     
     return neighbors
 
-def generate_neighbors_3_opt(airplanes):
+def generate_neighbors_comb(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
     
-    # Generate neighbors by swapping the landing order of triples of airplanes
     for i in range(num_airplanes):
-        for j in range(i + 1, num_airplanes):
-            for k in range(j + 1, num_airplanes):
-                neighbor = airplanes[:]
-                # Swap the positions of the three airplanes
-                neighbor[i], neighbor[j], neighbor[k] = neighbor[k], neighbor[i], neighbor[j]
-                neighbors.append(neighbor)
+        for j in range(1, min(i + 2, num_airplanes - i + 1)):
+            neighbor = airplanes[:]
+            neighbor[i], neighbor[(i+j)%num_airplanes] = neighbor[(i+j)%num_airplanes], neighbor[i]
+            neighbors.append(neighbor)
+            i, j = random.sample(range(num_airplanes), 2)
+            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+            neighbors.append(neighbor)
     
     return neighbors
+
 

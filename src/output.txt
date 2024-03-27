@@ -1,0 +1,2138 @@
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 167, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 170, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 188, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 185, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 39
+Number of Crashes: 16
+Iteration: 0
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 167, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 170, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 185, Safety: False
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 188, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 128, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 39
+Number of Crashes: 14
+Iteration: 1
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 167, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 185, Safety: False
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 188, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 125, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 170, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 39
+Number of Crashes: 12
+Iteration: 2
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 170, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 185, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 140, Safety: True
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 167, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 39
+Number of Crashes: 10
+Iteration: 3
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 170, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 158, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 209, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 185, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 38
+Number of Crashes: 9
+Iteration: 4
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 170, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 209, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 125, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 38
+Number of Crashes: 7
+Iteration: 5
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 170, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 209, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 131, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 152, Safety: False
+Crashed
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 125, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 152, Safety: True
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 38
+Number of Crashes: 6
+Iteration: 6
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 152, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 170, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 209, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 152, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 191, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 116, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 188, Safety: True
+Crashed
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 38
+Number of Crashes: 5
+Iteration: 7
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 152, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 170, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 209, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 152, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 110, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 101, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 188, Safety: True
+Crashed
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 191, Safety: True
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 38
+Number of Crashes: 4
+Iteration: 8
+
+New Best Solution:
+Landing Strip 0:
+Fuel level: 1700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 212, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 98, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 110, Safety: True
+Fuel level: 2000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 119, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 122, Safety: True
+Crashed
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 1500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: False
+Crashed
+Fuel level: 3200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 134, Safety: True
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 137, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 152, Safety: False
+Crashed
+Fuel level: 1600, Fuel consumption rate: 23, Expected landing time: 60, Actual landing time: 179, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 3100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 170, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 152, Safety: True
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 2400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 2700, Fuel consumption rate: 24, Expected landing time: 30, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 188, Safety: False
+Crashed
+Fuel level: 2400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 22, Expected landing time: 23, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 3600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 209, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 212, Safety: False
+Crashed
+Landing Strip 1:
+Fuel level: 3700, Fuel consumption rate: 23, Expected landing time: 5, Actual landing time: 101, Safety: True
+Fuel level: 1600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 2600, Fuel consumption rate: 16, Expected landing time: 10, Actual landing time: 95, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2400, Fuel consumption rate: 20, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1700, Fuel consumption rate: 27, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 25, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2100, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 2200, Fuel consumption rate: 12, Expected landing time: 21, Actual landing time: 128, Safety: True
+Fuel level: 2500, Fuel consumption rate: 20, Expected landing time: 21, Actual landing time: 131, Safety: True
+Crashed
+Fuel level: 1800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 30, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 1400, Fuel consumption rate: 14, Expected landing time: 25, Actual landing time: 146, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 149, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 30, Expected landing time: 60, Actual landing time: 152, Safety: False
+Crashed
+Fuel level: 1500, Fuel consumption rate: 16, Expected landing time: 65, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 21, Expected landing time: 30, Actual landing time: 161, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 30, Expected landing time: 40, Actual landing time: 164, Safety: False
+Crashed
+Fuel level: 2700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 167, Safety: True
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2300, Fuel consumption rate: 26, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 25, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 155, Safety: True
+Fuel level: 3400, Fuel consumption rate: 19, Expected landing time: 50, Actual landing time: 182, Safety: True
+Crashed
+Fuel level: 3000, Fuel consumption rate: 29, Expected landing time: 25, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2000, Fuel consumption rate: 17, Expected landing time: 25, Actual landing time: 188, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 191, Safety: True
+Crashed
+Fuel level: 2200, Fuel consumption rate: 19, Expected landing time: 90, Actual landing time: 194, Safety: False
+Crashed
+Fuel level: 2000, Fuel consumption rate: 14, Expected landing time: 70, Actual landing time: 197, Safety: True
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 3000, Fuel consumption rate: 24, Expected landing time: 75, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 206, Safety: False
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 212, Safety: True
+Crashed
+Landing Strip 2:
+Fuel level: 2400, Fuel consumption rate: 13, Expected landing time: 5, Actual landing time: 95, Safety: True
+Fuel level: 2700, Fuel consumption rate: 23, Expected landing time: 10, Actual landing time: 98, Safety: True
+Fuel level: 3000, Fuel consumption rate: 15, Expected landing time: 10, Actual landing time: 101, Safety: True
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 15, Actual landing time: 104, Safety: True
+Fuel level: 2700, Fuel consumption rate: 16, Expected landing time: 15, Actual landing time: 107, Safety: True
+Fuel level: 1900, Fuel consumption rate: 26, Expected landing time: 20, Actual landing time: 110, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 23, Expected landing time: 20, Actual landing time: 113, Safety: True
+Crashed
+Fuel level: 2500, Fuel consumption rate: 22, Expected landing time: 20, Actual landing time: 116, Safety: True
+Crashed
+Fuel level: 3400, Fuel consumption rate: 28, Expected landing time: 20, Actual landing time: 119, Safety: True
+Fuel level: 2000, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 122, Safety: True
+Fuel level: 2300, Fuel consumption rate: 15, Expected landing time: 20, Actual landing time: 125, Safety: True
+Fuel level: 3900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 128, Safety: True
+Fuel level: 2900, Fuel consumption rate: 12, Expected landing time: 20, Actual landing time: 131, Safety: True
+Fuel level: 2800, Fuel consumption rate: 18, Expected landing time: 22, Actual landing time: 134, Safety: True
+Fuel level: 2000, Fuel consumption rate: 28, Expected landing time: 24, Actual landing time: 137, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 140, Safety: False
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 25, Actual landing time: 143, Safety: True
+Crashed
+Fuel level: 2600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 146, Safety: False
+Crashed
+Fuel level: 1400, Fuel consumption rate: 22, Expected landing time: 50, Actual landing time: 149, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2200, Fuel consumption rate: 28, Expected landing time: 30, Actual landing time: 155, Safety: False
+Crashed
+Fuel level: 1600, Fuel consumption rate: 21, Expected landing time: 55, Actual landing time: 158, Safety: False
+Crashed
+Fuel level: 2100, Fuel consumption rate: 26, Expected landing time: 35, Actual landing time: 161, Safety: False
+Crashed
+Fuel level: 2500, Fuel consumption rate: 18, Expected landing time: 35, Actual landing time: 164, Safety: True
+Crashed
+Fuel level: 2300, Fuel consumption rate: 29, Expected landing time: 70, Actual landing time: 167, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 14, Expected landing time: 40, Actual landing time: 170, Safety: True
+Fuel level: 2200, Fuel consumption rate: 24, Expected landing time: 85, Actual landing time: 173, Safety: False
+Crashed
+Fuel level: 2800, Fuel consumption rate: 21, Expected landing time: 45, Actual landing time: 176, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 179, Safety: True
+Crashed
+Fuel level: 3900, Fuel consumption rate: 16, Expected landing time: 50, Actual landing time: 182, Safety: True
+Fuel level: 3600, Fuel consumption rate: 27, Expected landing time: 55, Actual landing time: 185, Safety: True
+Crashed
+Fuel level: 2750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 188, Safety: True
+Crashed
+Fuel level: 3750, Fuel consumption rate: 19, Expected landing time: 25, Actual landing time: 191, Safety: True
+Fuel level: 1700, Fuel consumption rate: 13, Expected landing time: 35, Actual landing time: 194, Safety: True
+Crashed
+Fuel level: 1900, Fuel consumption rate: 17, Expected landing time: 75, Actual landing time: 197, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 25, Expected landing time: 75, Actual landing time: 200, Safety: False
+Crashed
+Fuel level: 1800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 203, Safety: False
+Crashed
+Fuel level: 3800, Fuel consumption rate: 20, Expected landing time: 85, Actual landing time: 206, Safety: True
+Crashed
+Fuel level: 2800, Fuel consumption rate: 19, Expected landing time: 95, Actual landing time: 209, Safety: False
+Crashed
+Fuel level: 2900, Fuel consumption rate: 18, Expected landing time: 95, Actual landing time: 95, Safety: True
+
+New Best Solution Value: 3244
+Unsafe Planes: 38
+Number of Crashes: 3
+Iteration: 9
+

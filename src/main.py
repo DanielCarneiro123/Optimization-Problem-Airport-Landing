@@ -163,8 +163,8 @@ def main():
 
 
     # Store airplanes in a list
-    airplanes = [airplane1, airplane2, airplane9, airplane10
-                 , airplane5, airplane6, airplane7, airplane8, airplane3, airplane4,
+    airplanes = [airplane1, airplane2, airplane3, airplane4
+                 , airplane5, airplane6, airplane7, airplane8, airplane9, airplane10,
                 airplane11, airplane12, airplane13, airplane14, airplane15, airplane16, airplane17, airplane18, airplane19, airplane20,
                 airplane21, airplane22, airplane23, airplane24, airplane25, airplane26, airplane27, airplane28, airplane29, airplane30,
                 airplane31, airplane32, airplane33, airplane34, airplane35, airplane36, airplane37, airplane38, airplane39, airplane40,
