@@ -258,7 +258,7 @@ def main():
                             # tabu_size = int(input())
                             # Perform tabu search
                             # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
-                            best_solution, best_cost = hill_climbing(airplanes)
+                            best_solution, best_cost = hill_climbing(airplanes, "output.txt")
                             print("BEST SOLUTION:")
                             print_airplanes_and_strips(best_solution)
                             break
