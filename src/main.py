@@ -247,18 +247,21 @@ def main():
                             print("Please enter a number between 1 and 60.")
                             print("==============================================")
                         else:
-                            # airplanes = generate_airplanes
-                            '''print("==============================================")
-                            print("How many iterations do you want to perform?")
-                            print("==============================================")
-                            max_iterations = int(input())
-                            print("==============================================")
-                            print(" ")
-                            print("==============================================")'''
-                            # tabu_size = int(input())
-                            # Perform tabu search
-                            # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
-                            best_solution, best_cost = hill_climbing(airplanes)
+                           
+                            max_iterations = -1
+                            while True:
+                                print("==============================================")
+                                print("How many iterations do you want to perform? (1-10000)")
+                                print("==============================================")
+                                
+                                max_iterations = int(input())
+
+                                if 1 <= max_iterations <= 10000:
+                                    break
+                                else:
+                                    print("Invalid input. Please enter a number between 1 and 10000 (inclusive).")
+                        
+                            best_solution,_ = hill_climbing(airplanes[:num_airplanes],max_iterations)
                             print("BEST SOLUTION:")
                             print_airplanes_and_strips(best_solution)
                             break
