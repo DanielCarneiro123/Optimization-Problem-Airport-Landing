@@ -162,52 +162,68 @@ def get_elites(population_fitness,elite_size):
     return elite_population
 
 # Doing
-def geneticAI(airplanes, population_size, max_number_of_iterations, selection_method,elite_percentage):
-    if(len(airplanes) == 1):
-        return [airplanes[0]],-1
-    population = generate_chromosomes(airplanes, population_size) # Generate population
-    current_fitness_of_best_chromosome = float('inf') # Best fitness
-    best_chromosome = None # Best chromosome
+import time
+
+def geneticAI(airplanes, population_size, max_number_of_iterations, selection_method, elite_percentage):
+    if len(airplanes) == 1:
+        return [airplanes[0]], -1
+    
+    population = generate_chromosomes(airplanes, population_size)  # Generate population
+    current_fitness_of_best_chromosome = float('inf')  # Best fitness
+    best_chromosome = None  # Best chromosome
     num_of_crashes = 100000
     unsafe_planes = 100000 
-    elite_size = int(population_size*elite_percentage)-1 # Elite size individuals to retain for next iteration
+    elite_size = int(population_size * elite_percentage) - 1  # Elite size individuals to retain for next iteration
 
-    for _ in range(max_number_of_iterations):
+    output_file = "genetic_output.txt"
+    time_file = "execution_time.txt"
+    start_time = time.time()  # Record start time
+    
+    with open(output_file, 'w') as file, open(time_file, 'w') as timefile:
+        for _ in range(max_number_of_iterations):
+            population_fitness = []
 
-        population_fitness = []
+            # Evaluate fitness for each chromosome in the population
+            for chromosome in population:
+                _, fitness, unsafe_waiting, curr_num_of_crashes = generateResults(chromosome)
+                population_fitness.append((chromosome, fitness))
 
-        # Evaluate fitness for each chromosome in the population
-        for chromosome in population:
-            _, fitness, unsafe_waiting, curr_num_of_crashes = generateResults(chromosome)
-            population_fitness.append((chromosome, fitness))
+                if (fitness < current_fitness_of_best_chromosome and 
+                    unsafe_waiting <= unsafe_planes and 
+                    curr_num_of_crashes <= num_of_crashes) or \
+                   (unsafe_waiting < unsafe_planes and curr_num_of_crashes <= num_of_crashes) or \
+                   (curr_num_of_crashes < num_of_crashes):
+                    
+                    current_fitness_of_best_chromosome = fitness
+                    best_chromosome = chromosome
+                    num_of_crashes = curr_num_of_crashes
+                    unsafe_planes = unsafe_waiting
+            
+            file.write(f"{current_fitness_of_best_chromosome}\n")
+            
+            # Record time elapsed
+            elapsed_time = time.time() - start_time
+            timefile.write(f"{elapsed_time}\n")
+    
+            # Elite population 
+            elite_population = get_elites(population_fitness, elite_size)
 
-            if ((fitness < current_fitness_of_best_chromosome) and (unsafe_waiting <= unsafe_planes) and (curr_num_of_crashes <= num_of_crashes)) or ((unsafe_waiting < unsafe_planes) and (curr_num_of_crashes <= num_of_crashes)) or (curr_num_of_crashes < num_of_crashes):
-                current_fitness_of_best_chromosome = fitness
-                best_chromosome = chromosome
-                num_of_crashes = curr_num_of_crashes
-                unsafe_planes = unsafe_waiting
-        
-         #print(current_fitness_of_best_chromosome)
-        # Elite population 
-        elite_population = get_elites(population_fitness,elite_size)
+            # Select best chromosomes for reproduction
+            if selection_method == "roulette":
+                selection_population = roulette_selection(population_fitness)
+            else:
+                raise ValueError("Unknown selection method: " + selection_method)
 
-        # Select best chromosomes for reproduction
-        if selection_method == "roulette":
-            selection_population = roulette_selection(population_fitness)
-        else:
-            raise ValueError("Unknown selection method: " + selection_method)
-        
-        if(len(selection_population) <= 1):
-            break
+            if len(selection_population) <= 1:
+                break
 
-        # Generate new generation through reproduction and mutation
-        reproduction_size = len(population) - elite_size
-        reproduction_population = reproduction_all(selection_population, reproduction_size)
-        mutate_population = mutation_all(reproduction_population)
-        new_generation = mutate_population+elite_population
+            # Generate new generation through reproduction and mutation
+            reproduction_size = len(population) - elite_size
+            reproduction_population = reproduction_all(selection_population, reproduction_size)
+            mutate_population = mutation_all(reproduction_population)
+            new_generation = mutate_population + elite_population
 
-        # Update population with mutated generation
-        population = new_generation
+            # Update population with mutated generation
+            population = new_generation
 
     return best_chromosome, current_fitness_of_best_chromosome
-
