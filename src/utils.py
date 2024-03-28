@@ -1,4 +1,5 @@
 
+import random
 from airplane import *
 from landing_strip import *
 
@@ -74,7 +75,50 @@ def generate_neighbors(airplanes):
 
 
 def generate_initial_solution(airplanes):
-    # Sort airplanes based on a combination of expected landing time and fuel level
+    
     initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time, x.arriving_fuel_level/x.fuel_consumption_rate))
     return initial_solution
+
+def generate_initial_solution2(airplanes):
+    
+    initial_solution = airplanes[:]
+    
+    random.shuffle(initial_solution)
+    return initial_solution
+
+def generate_initial_solution3(airplanes):
+    # Sort airplanes based on a combination of expected landing time
+    initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time))
+    return initial_solution
+
+import random
+
+def generate_neighbors_random_swaps(airplanes):
+    neighbors = []
+    num_airplanes = len(airplanes)
+    
+    
+    for _ in range(num_airplanes): 
+        neighbor = airplanes[:]
+        i, j = random.sample(range(num_airplanes), 2)
+        neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+        neighbors.append(neighbor)
+    
+    return neighbors
+
+def generate_neighbors_comb(airplanes):
+    neighbors = []
+    num_airplanes = len(airplanes)
+    
+    for i in range(num_airplanes):
+        for j in range(1, min(i + 2, num_airplanes - i + 1)):
+            neighbor = airplanes[:]
+            neighbor[i], neighbor[(i+j)%num_airplanes] = neighbor[(i+j)%num_airplanes], neighbor[i]
+            neighbors.append(neighbor)
+            i, j = random.sample(range(num_airplanes), 2)
+            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+            neighbors.append(neighbor)
+    
+    return neighbors
+
 
