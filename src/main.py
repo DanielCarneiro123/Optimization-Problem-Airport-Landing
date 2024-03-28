@@ -180,7 +180,7 @@ def main():
                   airplane111, airplane112, airplane113, airplane114, airplane115, airplane116, airplane117, airplane118, airplane119, airplane120])
 
     
-
+    airplanes = generate_initial_solution2(airplanes)
 
     '''
     counter = 0
@@ -332,7 +332,7 @@ def main():
                                 
                                 population_size = int(input())
 
-                                if 100 <= population_size <= 5000:
+                                if 100 <= population_size <= 1000:
                                     break
                                 else:
                                     print("Invalid input. Please enter a number between 100 and 1000 (inclusive).")
@@ -350,9 +350,14 @@ def main():
                                 else:
                                     print("Invalid input. Please enter a number between 1 and 10000 (inclusive).")
                             
+                            start_time = time.time()
                             best_solution, _ = geneticAI(airplanes[:num_airplanes],population_size,max_iterations,"roulette",0.05)
+                            end_time = time.time()
+                            elapsed_time = end_time - start_time
+                            
                             print("BEST SOLUTION:")
                             print_airplanes_and_strips(best_solution)
+                            print("Time taken for genetic function:", elapsed_time, "seconds")
                             break
                     except ValueError:
                         print("Invalid input. Please enter a valid number.")
