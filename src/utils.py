@@ -59,6 +59,35 @@ def generateResults(airplanes):
        
         return landing_strips, sum_difference, unsafe_waiting, num_of_crashes
 
+def generateResults2(airplanes):
+        landing_strips = [LandingStrip() for _ in range(3)]
+        landed_airplanes = set()
+
+        # Simulate landing airplanes on strips
+        for airplane in airplanes:
+            for landing_strip in landing_strips:
+                if airplane not in landed_airplanes:
+                    landing_strip.land_airplane(airplane, landing_strips)
+                    landed_airplanes.add(airplane)
+                    break
+        penalty = 0
+        unsafe_waiting = 0
+        num_of_crashes= 0
+        
+        # Calculate the sum of differences between actual and expected landing times for the current solution
+        for airplane in airplanes:
+            
+            penalty += airplane.actual_landing_time - airplane.expected_landing_time
+            if(airplane.actual_landing_time - airplane.expected_landing_time!=0 and not airplane.safe):
+                unsafe_waiting += 1
+                penalty += 1
+            if(airplane.is_gonna_crash()):
+                 penalty = penalty + 500
+                 num_of_crashes += 1
+                
+       
+        return landing_strips, penalty, unsafe_waiting, num_of_crashes
+
 
 def generate_neighbors(airplanes):
     neighbors = []
@@ -73,16 +102,20 @@ def generate_neighbors(airplanes):
     
     return neighbors
 
-def generate_neighbors2(current_solution, n=5):
+def generate_neighbors2(current_solution, n=1):
     neighbors = []
     for _ in range(n):
-        neighbor = current_solution[:]  # Faça uma cópia da solução atual
-        # Realize pequenas modificações na cópia para gerar um vizinho
-        # Por exemplo, troque dois elementos consecutivos
-        index = random.randint(0, len(neighbor) - 2)  # Seleciona um índice válido para troca
-        neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]  # Troca os elementos
+        neighbor = current_solution[:] 
+        num = random.randint(0, 1)
+        if num % 2 == 0:
+            index = random.randint(0, len(neighbor) - 2)  
+            neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]
+        else:
+            index = random.randint(1, len(neighbor) - 1) 
+            neighbor[index-1], neighbor[index] = neighbor[index], neighbor[index-1]
         neighbors.append(neighbor)
     return neighbors
+
 
 def generate_initial_solution(airplanes):
     # Sort airplanes based on a combination of expected landing time and fuel
@@ -100,8 +133,6 @@ def generate_initial_solution3(airplanes):
     # Sort airplanes based on a combination of expected landing time
     initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time))
     return initial_solution
-
-import random
 
 def generate_neighbors_random_swaps(airplanes):
     neighbors = []
