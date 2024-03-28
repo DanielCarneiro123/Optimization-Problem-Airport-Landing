@@ -102,18 +102,11 @@ def generate_neighbors(airplanes):
     
     return neighbors
 
-def generate_neighbors2(current_solution, n=1):
+def generate_neighbors2(current_solution):
     neighbors = []
-    for _ in range(n):
-        neighbor = current_solution[:] 
-        num = random.randint(0, 1)
-        if num % 2 == 0:
-            index = random.randint(0, len(neighbor) - 2)  
-            neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]
-        else:
-            index = random.randint(1, len(neighbor) - 1) 
-            neighbor[index-1], neighbor[index] = neighbor[index], neighbor[index-1]
-        neighbors.append(neighbor)
+    neighbor = current_solution[:] 
+    index = random.randint(0, len(neighbor) - 2)  
+    neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]  
     return neighbors
 
 
