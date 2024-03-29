@@ -93,20 +93,27 @@ def generate_neighbors(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
     
-    # Generate neighbors by swapping the landing order of pairs of airplanes
-    for i in range(num_airplanes):
-        for j in range(i + 1, num_airplanes):
-            neighbor = airplanes[:]
-            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
-            neighbors.append(neighbor)
+    # Swap neighboring elements
+    for i in range(num_airplanes - 1):
+        neighbor = airplanes[:]
+        neighbor[i], neighbor[i + 1] = neighbor[i + 1], neighbor[i]
+        neighbors.append(neighbor)
+    
+    # Introduce occasional random swaps to explore other areas
+    for _ in range(num_airplanes):
+        i, j = random.sample(range(num_airplanes), 2)
+        neighbor = airplanes[:]
+        neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+        neighbors.append(neighbor)
     
     return neighbors
 
-def generate_neighbors2(current_solution):
+def generate_neighbors2(current_solution, n=36):
     neighbors = []
     neighbor = current_solution[:] 
-    index = random.randint(0, len(neighbor) - 2)  
-    neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]  
+    for _ in range (n):
+        index = random.randint(0, len(neighbor) - 2)  
+        neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]  
     return neighbors
 
 
@@ -140,16 +147,18 @@ def generate_neighbors_random_swaps(airplanes):
     
     return neighbors
 
-def generate_neighbors_reverse_subsequence(airplanes):
+def generate_neighbors_comb(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
     
-   
-    for _ in range(num_airplanes):  
-        neighbor = airplanes[:]
-        i, j = sorted(random.sample(range(num_airplanes), 2))
-        neighbor[i:j+1] = reversed(neighbor[i:j+1])
-        neighbors.append(neighbor)
+    for i in range(num_airplanes):
+        for j in range(1, min(i + 2, num_airplanes - i + 1)):
+            neighbor = airplanes[:]
+            neighbor[i], neighbor[(i+j)%num_airplanes] = neighbor[(i+j)%num_airplanes], neighbor[i]
+            neighbors.append(neighbor)
+            i, j = random.sample(range(num_airplanes), 2)
+            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+            neighbors.append(neighbor)
     
     return neighbors
 
