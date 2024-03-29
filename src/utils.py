@@ -59,6 +59,7 @@ def generateResults(airplanes):
        
         return landing_strips, sum_difference, unsafe_waiting, num_of_crashes
 
+
 def generate_neighbors(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
@@ -78,6 +79,14 @@ def generate_neighbors(airplanes):
     
     return neighbors
 
+def generate_neighbors2(current_solution, n=36):
+    neighbors = []
+    neighbor = current_solution[:] 
+    for _ in range (n):
+        index = random.randint(0, len(neighbor) - 2)  
+        neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]  
+    return neighbors
+
 
 def generate_initial_solution(airplanes):
     
@@ -95,8 +104,6 @@ def generate_initial_solution3(airplanes):
     # Sort airplanes based on a combination of expected landing time
     initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time))
     return initial_solution
-
-import random
 
 def generate_neighbors_random_swaps(airplanes):
     neighbors = []

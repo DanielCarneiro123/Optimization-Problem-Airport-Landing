@@ -292,9 +292,13 @@ def main():
                             # tabu_size = int(input())
                             # Perform tabu search
                             # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
+                            start_time = time.time()
                             best_solution, best_cost = simulated_annealing(airplanes[:num_airplanes])
                             print("BEST SOLUTION:")
                             print_airplanes_and_strips(best_solution)
+                            end_time = time.time()
+                            elapsed_time = end_time - start_time
+                            print("Time taken for simulated annealing function:", elapsed_time, "seconds")
                             break
                     except ValueError:
                         print("Invalid input. Please enter a valid number.")
