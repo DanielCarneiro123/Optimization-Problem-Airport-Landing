@@ -13,7 +13,7 @@ def main():
     
 
     airplane1 = Airplane(2000, 15, 20)
-    airplane1 = Airplane(2000, 15, 20)
+    
     airplane2 = Airplane(2000, 25, 20)
     airplane3 = Airplane(2500, 20, 21)
     airplane4 = Airplane(2800, 18, 22)
@@ -22,13 +22,7 @@ def main():
     airplane7 = Airplane(2800, 30, 25)
     airplane8 = Airplane(2000, 28, 24)
     airplane9 = Airplane(2600, 16, 10)
-    airplane3 = Airplane(2500, 20, 21)
-    airplane4 = Airplane(2800, 18, 22)
-    airplane5 = Airplane(2500, 22, 20)
-    airplane6 = Airplane(2200, 12, 21)
-    airplane7 = Airplane(2800, 30, 25)
-    airplane8 = Airplane(2000, 28, 24)
-    airplane9 = Airplane(2600, 16, 10)
+    
     airplane10 = Airplane(2200, 24, 85)
     airplane11 = Airplane(2700, 21, 30)
     airplane12 = Airplane(1900, 17, 75)
@@ -41,56 +35,54 @@ def main():
     airplane16 = Airplane(2750, 19, 25)
     airplane17 = Airplane(2100, 23, 20)
     airplane18 = Airplane(2600, 27, 25)
-    airplane19 = Airplane(2700, 13, 35)
+    
     airplane19 = Airplane(2700, 13, 35)
     airplane20 = Airplane(2400, 20, 15)
     airplane21 = Airplane(2600, 22, 23)
     airplane22 = Airplane(2500, 16, 65)
-    airplane21 = Airplane(2600, 22, 23)
-    airplane22 = Airplane(2500, 16, 65)
+    
     airplane23 = Airplane(2200, 28, 30)
     airplane24 = Airplane(2800, 25, 45)
     airplane25 = Airplane(2900, 12, 20)
     airplane26 = Airplane(2400, 19, 50)
-    airplane25 = Airplane(2900, 12, 20)
-    airplane26 = Airplane(2400, 19, 50)
+   
     airplane27 = Airplane(3000, 24, 75)
     airplane28 = Airplane(2000, 17, 25)
     airplane29 = Airplane(2500, 30, 60)
     airplane30 = Airplane(2800, 14, 40)
-    airplane30 = Airplane(2800, 14, 40)
+  
     airplane31 = Airplane(2700, 23, 10)
     airplane32 = Airplane(2700, 27, 20)
-    airplane32 = Airplane(2700, 27, 20)
+    
     airplane33 = Airplane(2300, 15, 20)
     airplane34 = Airplane(3600, 21, 55)
-    airplane34 = Airplane(3600, 21, 55)
+   
     airplane35 = Airplane(2900, 18, 95)
     airplane36 = Airplane(3100, 26, 35)
-    airplane36 = Airplane(3100, 26, 35)
+  
     airplane37 = Airplane(2400, 13, 5)
     airplane38 = Airplane(2300, 29, 70)
     airplane39 = Airplane(2500, 22, 15)
     airplane40 = Airplane(3900, 16, 50)
     airplane41 = Airplane(3800, 20, 85)
-    airplane40 = Airplane(3900, 16, 50)
-    airplane41 = Airplane(3800, 20, 85)
+   
+   
     airplane42 = Airplane(2700, 24, 30)
     airplane43 = Airplane(3400, 28, 20)
-    airplane43 = Airplane(3400, 28, 20)
+    
     airplane44 = Airplane(3000, 17, 25)
     airplane45 = Airplane(2200, 19, 90)
     airplane46 = Airplane(2600, 27, 55)
-    airplane46 = Airplane(2600, 27, 55)
+  
     airplane47 = Airplane(2100, 15, 20)
     airplane48 = Airplane(2900, 25, 75)
     airplane49 = Airplane(3700, 23, 5)
-    airplane49 = Airplane(3700, 23, 5)
+   
     airplane50 = Airplane(2300, 30, 40)
     airplane51 = Airplane(2000, 14, 70)
     airplane52 = Airplane(2500, 18, 35)
     airplane53 = Airplane(2900, 26, 20)
-    airplane53 = Airplane(2900, 26, 20)
+  
     airplane54 = Airplane(2700, 16, 15)
     airplane55 = Airplane(1400, 22, 50)
     airplane56 = Airplane(2800, 19, 95)

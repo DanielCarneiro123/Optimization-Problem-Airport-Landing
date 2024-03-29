@@ -21,7 +21,7 @@ def tabu_search(max_iterations, tabu_size, airplanes, output_file):
     with open(output_file, 'w') as f:
         for iteration in range(max_iterations):
             hasImproved = False
-            neighbors = generate_neighbors(current_solution)  # You can optimize this step
+            neighbors = generate_neighbors_random_swaps(current_solution)  # You can optimize this step
 
             # Find the best non-tabu neighbor
             best_neighbor = None

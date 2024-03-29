@@ -59,17 +59,22 @@ def generateResults(airplanes):
        
         return landing_strips, sum_difference, unsafe_waiting, num_of_crashes
 
-
 def generate_neighbors(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
     
-    # Generate neighbors by swapping the landing order of pairs of airplanes
-    for i in range(num_airplanes):
-        for j in range(i + 1, num_airplanes):
-            neighbor = airplanes[:]
-            neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
-            neighbors.append(neighbor)
+    # Swap neighboring elements
+    for i in range(num_airplanes - 1):
+        neighbor = airplanes[:]
+        neighbor[i], neighbor[i + 1] = neighbor[i + 1], neighbor[i]
+        neighbors.append(neighbor)
+    
+    # Introduce occasional random swaps to explore other areas
+    for _ in range(num_airplanes):
+        i, j = random.sample(range(num_airplanes), 2)
+        neighbor = airplanes[:]
+        neighbor[i], neighbor[j] = neighbor[j], neighbor[i]
+        neighbors.append(neighbor)
     
     return neighbors
 
