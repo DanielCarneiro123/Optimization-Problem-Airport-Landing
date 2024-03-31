@@ -21,7 +21,7 @@ def tabu_search(max_iterations, tabu_size, airplanes, output_file):
     with open(output_file, 'w') as f:
         for iteration in range(max_iterations):
             hasImproved = False
-            neighbors = generate_neighbors_random_swaps(current_solution)  # You can optimize this step
+            neighbors = generate_neighbors_random_swaps(current_solution) 
 
             # Find the best non-tabu neighbor
             best_neighbor = None
@@ -36,6 +36,8 @@ def tabu_search(max_iterations, tabu_size, airplanes, output_file):
                         best_neighbor_landing_strips = landing_strips
                         unsafe_planes = unsafe_waiting
                         num_of_crashes = curr_num_of_crashes
+                        
+               
 
             # If no non-tabu neighbors found, break
             if best_neighbor is None:
@@ -53,7 +55,7 @@ def tabu_search(max_iterations, tabu_size, airplanes, output_file):
                 num_of_crashes_sol = num_of_crashes
                 hasImproved = True
                 
-                # Write to file
+                
                 f.write(f"New Best Solution:\n" + print_improved_solution(best_solution_landing_strips) + "\n")
                 f.write(f"New Best Solution Value: {best_solution_value}\n")
                 f.write(f"Unsafe Planes: {unsafe_planes_sol}\n")
@@ -64,7 +66,7 @@ def tabu_search(max_iterations, tabu_size, airplanes, output_file):
                 
                 
 
-            # Update tabu list
+            
             tabu_list.append(best_neighbor)
             if len(tabu_list) > tabu_size:
                 tabu_list.pop(0)

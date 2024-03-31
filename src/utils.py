@@ -4,11 +4,10 @@ from airplane import *
 from landing_strip import *
 
 
-
+# Write to file string representation of landing strips with airplane details and crashes.
 def print_improved_solution(landing_strips):
-    output = ""
     
-    
+    output = "" 
     for i, landing_strip in enumerate(landing_strips):
         output += f"Landing Strip {i}:\n"
         for airplane in landing_strip.current_airplanes:
@@ -18,7 +17,9 @@ def print_improved_solution(landing_strips):
     
     return output
 
+ # Print details of best solution: landing strips, airplanes, crashes, and unsafe waiting times.
 def print_airplanes_and_strips(best_solution):
+       
         landing_strips, sum_difference, unsafe_waiting, n = generateResults(best_solution)
         print("Sum of differences between actual and expected landing times:", sum_difference)
         for i, landing_strip in enumerate(landing_strips):
@@ -30,7 +31,7 @@ def print_airplanes_and_strips(best_solution):
         print("Crashes:", n)
         print("Unsafe waiting:", unsafe_waiting)
 
-
+# Generate landing strips and calculate results
 def generateResults(airplanes):
         landing_strips = [LandingStrip() for _ in range(3)]
         landed_airplanes = set()
@@ -59,7 +60,7 @@ def generateResults(airplanes):
        
         return landing_strips, sum_difference, unsafe_waiting, num_of_crashes
 
-
+# Generate neighboring solutions by swapping neighboring elements and introducing random swaps.
 def generate_neighbors(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
@@ -79,20 +80,14 @@ def generate_neighbors(airplanes):
     
     return neighbors
 
-def generate_neighbors2(current_solution, n=36):
-    neighbors = []
-    neighbor = current_solution[:] 
-    for _ in range (n):
-        index = random.randint(0, len(neighbor) - 2)  
-        neighbor[index], neighbor[index + 1] = neighbor[index + 1], neighbor[index]  
-    return neighbors
 
-
+# Generate initial solution by sorting airplanes based on expected landing time and fuel consumption rate.
 def generate_initial_solution(airplanes):
     
     initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time, x.arriving_fuel_level/x.fuel_consumption_rate))
     return initial_solution
 
+# Generate initial solution by sorting airplanes randomly
 def generate_initial_solution2(airplanes):
     
     initial_solution = airplanes[:]
@@ -100,11 +95,14 @@ def generate_initial_solution2(airplanes):
     random.shuffle(initial_solution)
     return initial_solution
 
+
+# Sort airplanes based on  expected landing time
 def generate_initial_solution3(airplanes):
-    # Sort airplanes based on a combination of expected landing time
+    
     initial_solution = sorted(airplanes, key=lambda x: (x.expected_landing_time))
     return initial_solution
 
+# Generate neighboring solutions by performing random swaps on airplanes.
 def generate_neighbors_random_swaps(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
@@ -118,6 +116,7 @@ def generate_neighbors_random_swaps(airplanes):
     
     return neighbors
 
+# Generate neighboring solutions by swapping neighboring elements and introducing random swaps.
 def generate_neighbors_comb(airplanes):
     neighbors = []
     num_airplanes = len(airplanes)
