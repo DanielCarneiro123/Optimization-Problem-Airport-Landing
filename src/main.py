@@ -10,8 +10,6 @@ import time
 
 
 def main():
-    
-
     airplane1 = Airplane(2000, 15, 20)
     airplane2 = Airplane(2000, 25, 20)
     airplane3 = Airplane(2500, 20, 21)
@@ -189,7 +187,6 @@ def main():
                             print("Please enter a number between 1 and 120.")
                             print("==============================================")
                         else:
-                            # airplanes = generate_airplanes
                             print("==============================================")
                             print("How many iterations do you want to perform?")
                             print("==============================================")
@@ -264,9 +261,6 @@ def main():
                             print("==============================================")
                             print(" ")
                             print("==============================================")
-                            # tabu_size = int(input())
-                            # Perform tabu search
-                            # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
                             start_time = time.time()
                             best_solution, best_cost = simulated_annealing(airplanes[:num_airplanes], starting_temperature, cooling_rate, stopping_temperature, max_iterations)
                             print("BEST SOLUTION:")
@@ -360,9 +354,6 @@ def main():
                             print("==============================================")
                             print(" ")
                             print("==============================================")
-                            # tabu_size = int(input())
-                            # Perform tabu search
-                            # best_solution = tabu_search(max_iterations=max_iterations, tabu_size=tabu_size, airplanes=airplanes)
                             start_time = time.time()
                             best_solution, best_cost = hill_climbing(airplanes[:num_airplanes], "output.txt", max_iterations)
                             end_time = time.time()
