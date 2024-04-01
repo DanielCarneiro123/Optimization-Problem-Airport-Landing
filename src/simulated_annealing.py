@@ -36,14 +36,15 @@ def simulated_annealing(airplanes, initial_temperature, cooling_rate, stopping_t
                     best_neighbor = neighbor
                     unsafe_planes = unsafe_waiting
                     num_of_crashes = curr_num_of_crashes
-                    best_solution_landing_strips = landing_strips
+                    best_neighbour_landing_strips = landing_strips
             #updating to the best general solution or accepting a worst solution 
             if ((best_neighbor_value < best_cost) and (unsafe_planes <= unsafe_planes_sol) and (num_of_crashes <= num_of_crashes_sol)) or ((unsafe_planes < unsafe_planes_sol) and (num_of_crashes <= num_of_crashes_sol)) or (num_of_crashes < num_of_crashes_sol) or min(1, math.exp(-(best_neighbor_value - best_cost) / temperature)) > random.random():
-                file.write(f"New Best Solution:\n" + print_improved_solution(best_solution_landing_strips) + "\n")
+                best_landing_strip = best_neighbour_landing_strips
                 best_solution = best_neighbor
                 best_cost = best_neighbor_value
                 unsafe_planes_sol = unsafe_planes
                 num_of_crashes_sol = num_of_crashes
+                file.write(f"New Best Solution:\n" + print_improved_solution(best_landing_strip) + "\n")
                 file.write(f"New Best Solution Value: {best_cost}\n")
                 file.write(f"Unsafe Planes: {unsafe_planes_sol}\n")
                 file.write(f"Number of Crashes: {num_of_crashes_sol}\n")
@@ -54,15 +55,3 @@ def simulated_annealing(airplanes, initial_temperature, cooling_rate, stopping_t
 
     return best_solution, best_cost
 
-
-def print_improved_solution(landing_strips):
-        output = ""
-        
-        for i, landing_strip in enumerate(landing_strips):
-            output += f"Landing Strip {i}:\n"
-            for airplane in landing_strip.current_airplanes:
-                output += str(airplane) + "\n"
-                if airplane.is_gonna_crash():
-                    output += "Crashed\n"
-        
-        return output

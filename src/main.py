@@ -10,6 +10,8 @@ import time
 
 
 def main():
+    
+    # This the dataset we used to do the tests displayed in the powerpoint
     airplane1 = Airplane(2000, 15, 20)
     airplane2 = Airplane(2000, 25, 20)
     airplane3 = Airplane(2500, 20, 21)
@@ -144,15 +146,13 @@ def main():
                 airplane21, airplane22, airplane23, airplane24, airplane25, airplane26, airplane27, airplane28, airplane29, airplane30,
                 airplane31, airplane32, airplane33, airplane34, airplane35, airplane36, airplane37, airplane38, airplane39, airplane40,
                 airplane41, airplane42, airplane43, airplane44, airplane45, airplane46, airplane47, airplane48, airplane49, airplane50,
-                 airplane51, airplane52, airplane53, airplane54, airplane55, airplane56, airplane57, airplane58, airplane59, airplane60]
-    
-  
-    airplanes.extend([airplane61, airplane62, airplane63, airplane64, airplane65, airplane66, airplane67, airplane68, airplane69, airplane70,
+                 airplane51, airplane52, airplane53, airplane54, airplane55, airplane56, airplane57, airplane58, airplane59, airplane60,
+                 airplane61, airplane62, airplane63, airplane64, airplane65, airplane66, airplane67, airplane68, airplane69, airplane70,
                   airplane71, airplane72, airplane73, airplane74, airplane75, airplane76, airplane77, airplane78, airplane79, airplane80,
                   airplane81, airplane82, airplane83, airplane84, airplane85, airplane86, airplane87, airplane88, airplane89, airplane90,
                   airplane91, airplane92, airplane93, airplane94, airplane95, airplane96, airplane97, airplane98, airplane99, airplane100,
                   airplane101, airplane102, airplane103, airplane104, airplane105, airplane106, airplane107, airplane108, airplane109, airplane110,
-                  airplane111, airplane112, airplane113, airplane114, airplane115, airplane116, airplane117, airplane118, airplane119, airplane120])
+                  airplane111, airplane112, airplane113, airplane114, airplane115, airplane116, airplane117, airplane118, airplane119, airplane120]
 
 
 
